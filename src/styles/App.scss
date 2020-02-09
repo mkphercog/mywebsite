@@ -1,0 +1,23 @@
+.app {
+  width: 1200px;
+  margin: 0 auto;
+  font-family: arial;
+
+  .app__header {
+    height: 25vh;
+    background-color: greenyellow;
+  }
+  .app__nav {
+    height: 8vh;
+    background-color: white;
+  }
+  .app__page {
+    min-height: 40vh;
+    background-color: goldenrod;
+  }
+  .app__footer {
+    height: 15vh;
+    background-color: black;
+    color: white;
+  }
+}
