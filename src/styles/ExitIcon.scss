@@ -1,0 +1,20 @@
+.exit-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 15px;
+  .fa-times {
+    font-size: 35px;
+    color: goldenrod;
+
+    @media (min-width: 411px) {
+      font-size: 45px;
+    }
+    @media (min-width: 768px) {
+      font-size: 60px;
+    }
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  }
+}
