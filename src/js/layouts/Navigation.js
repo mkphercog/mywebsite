@@ -1,24 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../../styles/Navigation.scss";
+import MenuIcon from "../components/MenuIcon";
+import ExitIcon from "../components/ExitIcon";
 
 const navItems = [
   {
-    name: "about",
+    name: "O mnie",
     path: "/",
     exact: true
   },
   {
-    name: "experience",
+    name: "Doświadczenie",
     path: "/experience"
   },
   {
-    name: "education",
+    name: "Edukacja",
     path: "/education"
+  },
+  {
+    name: "Umiejętności",
+    path: "/skills"
+  },
+  {
+    name: "Zainteresowania",
+    path: "/hobbies"
+  },
+  {
+    name: "Portfolio",
+    path: "/portfolio"
   }
 ];
 
 const Navigation = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
   const nav = navItems.map(item => (
     <li className="nav__item" key={item.name}>
       <NavLink
@@ -31,7 +47,15 @@ const Navigation = () => {
     </li>
   ));
 
-  return <ul className="nav">{nav}</ul>;
+  return (
+    <>
+      <ul className={`nav ${showMenu ? "show" : "hide"}`}>
+        <ExitIcon click={() => setShowMenu(false)} />
+        {nav}{" "}
+      </ul>
+      <MenuIcon showMenu={showMenu} click={() => setShowMenu(true)} />
+    </>
+  );
 };
 
 export default Navigation;

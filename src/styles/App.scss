@@ -1,19 +1,20 @@
 .app {
-  width: 1200px;
+  min-width: 320px;
+  max-width: 1280px;
   margin: 0 auto;
-  font-family: arial;
+  font-family: "Roboto Condensed", sans-serif;
 
   .app__header {
-    height: 25vh;
-    background-color: greenyellow;
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
   }
   .app__nav {
-    height: 8vh;
-    background-color: white;
+    width: 100%;
   }
   .app__page {
-    min-height: 40vh;
-    background-color: goldenrod;
+    min-height: 100vh;
+    // background-color: goldenrod;
   }
   .app__footer {
     height: 15vh;

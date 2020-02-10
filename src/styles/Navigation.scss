@@ -1,16 +1,88 @@
 .nav {
   display: flex;
-  height: 100%;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: -100vw;
+  align-items: flex-end;
+  height: 100vh;
   list-style: none;
-  background-color: #ddd;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.9);
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    height: auto;
+    right: auto;
+    max-width: 1280px;
+    left: auto;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
   .nav__item {
-    flex-basis: 150px;
+    width: 65%;
+    text-align: center;
     .nav__link {
       display: block;
-      font-size: 20px;
+      font-size: 18px;
+      padding: 20px 30px;
+      border-bottom: 2px solid white;
       text-transform: uppercase;
       text-decoration: none;
-      color: black;
+      color: goldenrod;
+
+      @media (min-width: 411px) {
+        padding: 25px 35px;
+        font-size: 22px;
+      }
+      @media (min-width: 768px) {
+        padding: 30px 40px;
+        font-size: 28px;
+      }
+      @media (orientation: landscape) {
+        padding: 10px 25px;
+      }
+      @media (min-width: 1024px) {
+        padding: 15px 5px;
+        margin: 5px;
+        font-size: 20px;
+        border-bottom: none;
+        cursor: pointer;
+        transition: 0.3s;
+        border-bottom: 2px transparent solid;
+      }
+    }
+    @media (min-width: 1024px) {
+      :hover {
+        border-bottom: 2px white solid;
+      }
+      .nav__link.active {
+        border-bottom: 2px solid goldenrod;
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .nav.hide {
+    animation: slideBack 0.8s 0.5s linear both;
+    @keyframes slideBack {
+      from {
+        right: 0;
+      }
+      to {
+        right: -100vw;
+      }
+    }
+  }
+  .nav.show {
+    animation: slide 0.8s 0.5s linear both;
+    @keyframes slide {
+      to {
+        right: 0;
+      }
     }
   }
 }
