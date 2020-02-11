@@ -1,7 +1,6 @@
 .menu-icon {
   position: fixed;
   top: 0;
-  right: 0;
   padding: 5px;
   z-index: 99;
   .fa-caret-down {
@@ -17,27 +16,6 @@
     }
     @media (min-width: 1024px) {
       display: none;
-    }
-  }
-}
-
-.menu-icon.show {
-  animation: showIcon 1s 0.5s linear both;
-  @keyframes showIcon {
-    from {
-      right: -100px;
-    }
-    to {
-      right: 0;
-    }
-  }
-}
-
-.menu-icon.hide {
-  animation: hideIcon 1s 0.5s linear both;
-  @keyframes hideIcon {
-    to {
-      right: -100px;
     }
   }
 }

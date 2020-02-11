@@ -14,9 +14,8 @@
   @media (min-width: 1024px) {
     flex-direction: row;
     height: auto;
-    right: auto;
-    max-width: 1280px;
     left: auto;
+    max-width: 1280px;
     align-items: flex-start;
     background-color: rgba(0, 0, 0, 0.4);
   }
@@ -60,28 +59,6 @@
       }
       .nav__link.active {
         border-bottom: 2px solid goldenrod;
-      }
-    }
-  }
-}
-
-@media (max-width: 1023px) {
-  .nav.hide {
-    animation: slideBack 0.8s 0.5s linear both;
-    @keyframes slideBack {
-      from {
-        right: 0;
-      }
-      to {
-        right: -100vw;
-      }
-    }
-  }
-  .nav.show {
-    animation: slide 0.8s 0.5s linear both;
-    @keyframes slide {
-      to {
-        right: 0;
       }
     }
   }
