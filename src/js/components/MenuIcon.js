@@ -3,7 +3,7 @@ import "../../styles/MenuIcon.scss";
 
 const MenuIcon = ({ showMenu, click }) => {
   const [positionIcon, setPositionIcon] = useState(0);
-  const animationSpeed = 10;
+  const animationSpeed = 8;
 
   function iconSlide(num) {
     setPositionIcon(positionIcon + `${num}` * 1);

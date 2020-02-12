@@ -35,7 +35,7 @@ const navItems = [
 const Navigation = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [positionMenu, setPositionMenu] = useState(-100);
-  const animationSpeed = 10;
+  const animationSpeed = 8;
 
   //menu animation when mobile or width < 1024px
   function menuSlide(num) {
