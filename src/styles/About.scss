@@ -1,0 +1,104 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  width: 100%;
+  animation: showAbout 1s 0.3s linear both;
+
+  @keyframes showAbout {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  .about__foto {
+    width: 75%;
+    height: 55vh;
+    margin: 0 auto;
+    background-image: url("../images/myFace.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    border-radius: 15px;
+    box-shadow: 0 0 10px black;
+
+    @media (min-width: 768px) {
+      width: 35vw;
+      height: 40vh;
+      margin: auto auto;
+    }
+
+    @media (orientation: landscape) {
+      height: 75vw;
+    }
+
+    @media (min-width: 812px) and (orientation: landscape) {
+      height: 50vw;
+    }
+
+    @media (min-width: 823px) and (orientation: landscape) {
+      height: 55vw;
+    }
+
+    @media (min-width: 1024px) and (orientation: landscape) {
+      height: 45vw;
+    }
+
+    @media (min-width: 1280px) and (orientation: landscape) {
+      width: 25vw;
+      height: 35vw;
+    }
+    @media (min-width: 1600px) and (orientation: landscape) {
+      margin-bottom: 60px;
+    }
+  }
+
+  .about__wrapText {
+    @media (min-width: 768px) {
+      flex-basis: 55%;
+    }
+    @media (min-width: 1024px) {
+      margin-bottom: 40px;
+    }
+
+    .about__welcome {
+      padding-top: 40px;
+      color: goldenrod;
+      font-size: 40px;
+      text-align: center;
+
+      @media (min-width: 411px) {
+        font-size: 45px;
+      }
+
+      @media (min-width: 768px) {
+        font-size: 50px;
+      }
+    }
+
+    .about__description {
+      padding: 20px 10px;
+      margin: 30px 20px 65px;
+      font-size: 18px;
+      text-align: justify;
+      text-indent: 30px;
+      line-height: 140%;
+      border-top: 2px goldenrod solid;
+      border-bottom: 2px goldenrod solid;
+
+      @media (min-width: 411px) {
+        font-size: 22px;
+      }
+      @media (min-width: 1024px) {
+        font-size: 25px;
+      }
+    }
+  }
+}

@@ -27,8 +27,12 @@
     text-transform: uppercase;
     animation: changeColor 1s 0.7s both ease;
 
-    @media (min-width: 411px) {
+    @media (min-width: 360px) {
       font-size: 33px;
+    }
+
+    @media (min-width: 411px) {
+      font-size: 40px;
     }
 
     @media (min-width: 768px) {

@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import { Switch, Route } from "react-router-dom";
 import "../../styles/Header.scss";
-import slider1 from "../../images/slider1.jpg";
+// import slider1 from "../../images/slider1.jpg";
 import slider2 from "../../images/slider2.jpg";
 
 const Header = () => {
