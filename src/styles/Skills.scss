@@ -1,0 +1,74 @@
+.skills {
+  margin: 20px 0;
+  animation: showSkills 1s 0.3s linear both;
+
+  @keyframes showSkills {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .skills__title {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    background-color: #444;
+    @media (min-width: 768px) {
+      font-size: 32px;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 45px;
+    }
+  }
+
+  .skills__name {
+    padding: 6px 10px;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 150%;
+    text-transform: uppercase;
+
+    @media (min-width: 411) {
+      font-size: 24px;
+    }
+
+    @media (min-width: 768px) {
+      margin-left: 10%;
+      font-size: 26px;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 30px;
+    }
+  }
+
+  .skills__name--alone {
+    margin: 10px;
+    border-top: 2px solid goldenrod;
+    background-color: #eee;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      margin: 15px 40px;
+    }
+  }
+
+  .skills__bar {
+    width: 90%;
+    height: 15px;
+    margin: 0 auto;
+    background-color: #333;
+
+    @media (min-width: 768px) {
+      width: 80%;
+      height: 25px;
+    }
+  }
+}
