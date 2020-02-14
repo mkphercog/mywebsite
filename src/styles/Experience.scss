@@ -1,0 +1,111 @@
+.experience {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  animation: showAbout 1s 0.3s linear both;
+
+  @keyframes showAbout {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .experience__title {
+    width: 100%;
+    padding: 10px 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    background-color: #444;
+    @media (min-width: 768px) {
+      font-size: 32px;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 45px;
+    }
+  }
+
+  .experience__wrapper {
+    margin: 25px 15px;
+
+    @media (min-width: 768px) and (orientation: portrait) {
+      width: 50vw;
+      padding: 15px;
+      margin: 25px auto;
+    }
+
+    @media (min-width: 1024px) {
+      width: 60vw;
+      padding: 20px;
+      margin: 25px auto;
+    }
+  }
+
+  .experience__wrapper--left {
+    @media (min-width: 1024px) {
+      margin: 25px 0 25px 30px;
+    }
+  }
+
+  .experience__wrapper--right {
+    @media (min-width: 1024px) {
+      margin: 25px 30px 25px auto;
+    }
+  }
+
+  .experience__companyName {
+    background-color: goldenrod;
+    color: white;
+    padding: 5px;
+    font-size: 24px;
+
+    @media (min-width: 768px) {
+      font-size: 29px;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 33px;
+    }
+  }
+
+  .experience__text {
+    padding: 6px 10px;
+    font-size: 18px;
+    text-align: justify;
+    background-color: #eee;
+    line-height: 150%;
+
+    @media (min-width: 768px) {
+      font-size: 22px;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 25px;
+    }
+  }
+
+  .experience__text--italic {
+    font-style: italic;
+  }
+
+  .experience__text--boldGolden {
+    font-weight: bold;
+    color: goldenrod;
+  }
+  .experience__text--fz {
+    font-size: 16px;
+
+    @media (min-width: 768px) {
+      font-size: 19px;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 22px;
+    }
+  }
+}

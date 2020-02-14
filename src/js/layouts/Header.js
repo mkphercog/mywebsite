@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import "../../styles/Header.scss";
-// import slider1 from "../../images/slider1.jpg";
+import slider1 from "../../images/slider1.jpg";
 import slider2 from "../../images/slider2.jpg";
 
 const Header = () => {
@@ -18,10 +18,10 @@ const Header = () => {
           path="/experience"
           component={() => <h1 className="sliders__title">Doświadczenie</h1>}
         />
-        <Route
+        {/* <Route
           path="/education"
           component={() => <h1 className="sliders__title">Ukończone szkoły</h1>}
-        />
+        /> */}
         <Route
           path="/skills"
           component={() => <h1 className="sliders__title">Umiejętności</h1>}
