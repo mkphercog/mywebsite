@@ -14,10 +14,6 @@ const navItems = [
     name: "Doświadczenie",
     path: "/experience"
   },
-  // {
-  //   name: "Edukacja",
-  //   path: "/education"
-  // },
   {
     name: "Umiejętności",
     path: "/skills"

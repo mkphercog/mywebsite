@@ -3,8 +3,8 @@ import "../../styles/Footer.scss";
 
 const Footer = () => {
   return (
-    <div>
-      <p>Stopka</p>
+    <div className="footer">
+      <p className="footer__name">&copy; Marcin Hercog</p>
     </div>
   );
 };
