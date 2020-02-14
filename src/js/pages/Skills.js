@@ -44,7 +44,7 @@ const Skills = () => {
         Prawo jazdy kategorii B (od 10.2012)
       </h3>
       <h3 className="skills__name skills__name--alone">
-        Dobra znajomość programu Corel i Photoshop
+        Dobra znajomość programu Corel Draw i Photoshop
       </h3>
       <h3 className="skills__name skills__name--alone">
         Pracowitość, dokładność
