@@ -30,6 +30,7 @@ const Header = () => {
           path="/portfolio"
           component={() => <h1 className="sliders__title">Portfolio</h1>}
         />
+        <Route component={() => <h1 className="sliders__title">Error!</h1>} />
       </Switch>
     </div>
   );

@@ -6,6 +6,7 @@ import Experience from "../pages/Experience";
 import Skills from "../pages/Skills";
 import Hobbies from "../pages/Hobbies";
 import Portfolio from "../pages/Portfolio";
+import ErrorPage from "../pages/ErrorPage";
 
 const Page = () => {
   return (
@@ -16,6 +17,7 @@ const Page = () => {
         <Route path="/skills" component={Skills} />
         <Route path="/hobbies" component={Hobbies} />
         <Route path="/portfolio" component={Portfolio} />
+        <Route component={ErrorPage} />
       </Switch>
     </>
   );

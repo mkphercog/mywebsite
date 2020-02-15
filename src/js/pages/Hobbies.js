@@ -16,7 +16,7 @@ const hobbiesIMG = [
     url: cooking,
     alt: "Cooking",
     description:
-      "...nie samym programowaniem człowiek żyje. Jeść trzeba! Tak lubię gotować, ale bardziej jeść."
+      "...nie samym programowaniem człowiek żyje. Jeść trzeba! Tak, lubię gotować. :)"
   },
   {
     url: books,
