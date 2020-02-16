@@ -1,20 +1,14 @@
+@import "mixins.scss";
+
 .hobbies {
+  @include animation();
   display: flex;
   flex-direction: column;
   margin: 20px 0;
-  animation: showHobbies 1s 0.3s linear both;
-
-  @keyframes showHobbies {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
 
   .hobbies__wrapper {
     text-align: center;
+
     .hobbies__img {
       width: 85%;
       margin: 20px auto;

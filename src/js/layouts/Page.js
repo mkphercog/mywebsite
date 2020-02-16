@@ -1,6 +1,5 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import "../../styles/Page.scss";
 import About from "../pages/About";
 import Experience from "../pages/Experience";
 import Skills from "../pages/Skills";

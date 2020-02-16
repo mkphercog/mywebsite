@@ -1,31 +1,11 @@
+@import "mixins.scss";
+
 .skills {
+  @include animation();
   margin: 20px 0;
-  animation: showSkills 1s 0.3s linear both;
 
-  @keyframes showSkills {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
   .skills__title {
-    width: 100%;
-    margin-top: 20px;
-    padding: 10px 0;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 24px;
-    color: white;
-    background-color: #444;
-    @media (min-width: 768px) {
-      font-size: 32px;
-    }
-
-    @media (min-width: 1024px) {
-      font-size: 45px;
-    }
+    @include title();
   }
 
   .skills__name {

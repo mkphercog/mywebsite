@@ -1,33 +1,13 @@
-.portfolio {
-  width: 100%;
-  animation: showPortfolio 1s 0.3s linear both;
+@import "mixins.scss";
 
-  @keyframes showPortfolio {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
+.portfolio {
+  @include animation();
+
   .portfolio__wrapper {
     margin: 50px auto;
 
     .portfolio__title {
-      margin-top: 20px;
-      padding: 10px 0;
-      text-transform: uppercase;
-      text-align: center;
-      font-size: 24px;
-      color: white;
-      background-color: #444;
-      @media (min-width: 768px) {
-        font-size: 32px;
-      }
-
-      @media (min-width: 1024px) {
-        font-size: 45px;
-      }
+      @include title();
     }
 
     .portfolio__description {
@@ -35,7 +15,6 @@
       font-size: 18px;
       text-align: center;
       line-height: 150%;
-
       background-color: #eee;
 
       @media (min-width: 411) {
@@ -67,8 +46,8 @@
       }
 
       @media (min-width: 768px) {
-        font-size: 26px;
         width: 45%;
+        font-size: 26px;
       }
 
       @media (min-width: 1024px) {

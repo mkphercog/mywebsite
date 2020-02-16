@@ -1,33 +1,13 @@
+@import "mixins.scss";
+
 .experience {
+  @include animation();
   display: flex;
   flex-direction: column;
   margin: 20px 0;
-  animation: showAbout 1s 0.3s linear both;
-
-  @keyframes showAbout {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
 
   .experience__title {
-    width: 100%;
-    padding: 10px 0;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 24px;
-    color: white;
-    background-color: #444;
-    @media (min-width: 768px) {
-      font-size: 32px;
-    }
-
-    @media (min-width: 1024px) {
-      font-size: 45px;
-    }
+    @include title();
   }
 
   .experience__wrapper {
@@ -59,9 +39,9 @@
   }
 
   .experience__companyName {
+    padding: 5px;
     background-color: goldenrod;
     color: white;
-    padding: 5px;
     font-size: 24px;
 
     @media (min-width: 768px) {
@@ -97,6 +77,7 @@
     font-weight: bold;
     color: goldenrod;
   }
+
   .experience__text--fz {
     font-size: 16px;
 

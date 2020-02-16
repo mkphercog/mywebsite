@@ -4,9 +4,9 @@
     top: 50%;
     left: 50%;
     height: 100%;
-    transform: translate(-50%, -50%);
     min-width: 100%;
     min-height: 100%;
+    transform: translate(-50%, -50%);
     z-index: -99;
 
     @media (min-width: 1024px) {
@@ -19,13 +19,24 @@
 
   .sliders__title {
     position: absolute;
-    text-align: center;
     width: 100%;
+    text-align: center;
     font-size: 28px;
     bottom: 22%;
     color: white;
     text-transform: uppercase;
     animation: changeColor 1s 0.7s both ease;
+
+    @keyframes changeColor {
+      from {
+        bottom: 10%;
+        opacity: 0;
+      }
+      to {
+        bottom: 22%;
+        opacity: 1;
+      }
+    }
 
     @media (min-width: 360px) {
       font-size: 33px;
@@ -41,17 +52,6 @@
 
     @media (min-width: 1024px) {
       font-size: 60px;
-    }
-
-    @keyframes changeColor {
-      from {
-        bottom: 10%;
-        opacity: 0;
-      }
-      to {
-        bottom: 22%;
-        opacity: 1;
-      }
     }
   }
 }

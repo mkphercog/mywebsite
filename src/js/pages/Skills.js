@@ -4,19 +4,19 @@ import "../../styles/Skills.scss";
 const programing = [
   {
     name: "HTML",
-    progress: 33
+    progress: 28
   },
   {
     name: "CSS/SCSS",
-    progress: 34
+    progress: 29
   },
   {
     name: "JavaScript",
-    progress: 30
+    progress: 25
   },
   {
     name: "React",
-    progress: 28
+    progress: 23
   }
 ];
 

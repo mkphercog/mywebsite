@@ -1,18 +1,10 @@
+@import "mixins.scss";
+
 .about {
+  @include animation();
   display: flex;
   flex-direction: column;
   padding-top: 30px;
-  width: 100%;
-  animation: showAbout 1s 0.3s linear both;
-
-  @keyframes showAbout {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
 
   @media (min-width: 768px) {
     flex-direction: row;
