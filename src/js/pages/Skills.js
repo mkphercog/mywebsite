@@ -20,7 +20,34 @@ const programing = [
   }
 ];
 
-const Skills = () => {
+const otherSkills = [
+  {
+    textPL: "Prawo jazdy kategorii B (od 10.2012)",
+    textEN: "Category B driving license (since 10.2012)"
+  },
+  {
+    textPL: "Dobra znajomość programu Corel Draw i Photoshop",
+    textEN: "Good knowledge of Corel Draw and Photoshop"
+  },
+  {
+    textPL: "Pracowitość, dokładność",
+    textEN: "Diligence, accuracy"
+  },
+  {
+    textPL: "Szybkie przyswajanie wiedzy, zaangażowanie",
+    textEN: "Fast learning, involvement"
+  },
+  {
+    textPL: "Łatwość w nawiązywaniu kontaktów",
+    textEN: "Easy to make contacts"
+  },
+  {
+    textPL: "Język angielski - komunikatywny",
+    textEN: "Communicative English level"
+  }
+];
+
+const Skills = props => {
   const skillsArr = programing.map(item => (
     <div key={item.name}>
       <h3 className="skills__name">{item.name}</h3>
@@ -35,29 +62,23 @@ const Skills = () => {
       </div>
     </div>
   ));
+
+  const otherArr = otherSkills.map(item => (
+    <h3 key={item.textPL} className="skills__name skills__name--alone">
+      {props.lang === "PL" ? item.textPL : item.textEN}
+    </h3>
+  ));
+
   return (
     <div className="skills">
-      <h1 className="skills__title">Programowanie</h1>
+      <h1 className="skills__title">
+        {props.lang === "PL" ? "Programowanie" : "Programming"}
+      </h1>
       {skillsArr}
-      <h1 className="skills__title">Inne</h1>
-      <h3 className="skills__name skills__name--alone">
-        Prawo jazdy kategorii B (od 10.2012)
-      </h3>
-      <h3 className="skills__name skills__name--alone">
-        Dobra znajomość programu Corel Draw i Photoshop
-      </h3>
-      <h3 className="skills__name skills__name--alone">
-        Pracowitość, dokładność
-      </h3>
-      <h3 className="skills__name skills__name--alone">
-        Szybkie przyswajanie wiedzy, zaangażowanie
-      </h3>
-      <h3 className="skills__name skills__name--alone">
-        Łatwość w nawiązywaniu kontaktów
-      </h3>
-      <h3 className="skills__name skills__name--alone">
-        Język angielski - komunikatywny
-      </h3>
+      <h1 className="skills__title">
+        {props.lang === "PL" ? "Inne" : "Other"}
+      </h1>
+      {otherArr}
     </div>
   );
 };

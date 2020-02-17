@@ -3,45 +3,60 @@ import "../../styles/Portfolio.scss";
 
 const projects = [
   {
-    name: "Budżet domowy",
-    description:
+    namePL: "Budżet domowy",
+    nameEN: "Home budget",
+    descriptionPL:
       "Mini projekt do obliczania swoich wydatków. Całość projektu napisałem z wykorzystaniem biblioteki React.",
+    descriptionEN:
+      "A mini project to calculate your expenses. I wrote the whole project using the React library.",
     urlWeb: "https://mkphercog.github.io/React-Apps/",
     urlCode: "https://github.com/mkphercog/React-Apps/tree/homeBudget"
   },
   {
-    name: "Saper",
-    description: "Gra saper, niestety kodu się wstydzę, ale... działa.",
+    namePL: "Saper",
+    nameEN: "Sapper",
+    descriptionPL: "Gra saper, niestety kodu się wstydzę, ale... działa.",
+    descriptionEN:
+      "Minesweeper game, unfortunately the code is ashamed, but ... works.",
     urlWeb: "https://mkphercog.github.io/SapperTestingVersion/",
     urlCode: "https://github.com/mkphercog/SapperTestingVersion"
   },
   {
-    name: "Kalkulator",
-    description: "Prosty kalkulator napisany w HTML, CSS i JS",
+    namePL: "Kalkulator",
+    nameEN: "Calculator",
+    descriptionPL: "Prosty kalkulator napisany w HTML, CSS i JS.",
+    descriptionEN: "A simple calculator written in HTML, CSS and JS.",
     urlWeb: "https://mkphercog.github.io/calculator/",
     urlCode: "https://github.com/mkphercog/calculator"
   },
   {
-    name: "Pierwsza wizytówka",
-    description:
+    namePL: "Pierwsza wizytówka",
+    nameEN: "My first card",
+    descriptionPL:
       "Pierwsza wizytówka to moje początki przygody z HTML, CSS i trochę JS.",
+    descriptionEN:
+      "The first business card is my beginnings with HTML, CSS and some JS.",
     urlWeb: "https://mkphercog.github.io/my-first-web-JS/",
     urlCode: "https://github.com/mkphercog/my-first-web-JS"
   }
 ];
 
-const Portfolio = () => {
+const Portfolio = props => {
   const projectsArr = projects.map(project => (
-    <div key={project.name} className="portfolio__wrapper">
-      <h1 className="portfolio__title">{project.name}</h1>
-      <p className="portfolio__description">{project.description}</p>
+    <div key={project.namePL} className="portfolio__wrapper">
+      <h1 className="portfolio__title">
+        {props.lang === "PL" ? project.namePL : project.nameEN}
+      </h1>
+      <p className="portfolio__description">
+        {props.lang === "PL" ? project.descriptionPL : project.descriptionEN}
+      </p>
       <a
         className="portfolio__link"
         href={project.urlWeb}
         target="_blank"
         rel="noreferrer noopener"
       >
-        Zobacz projekt tutaj
+        {props.lang === "PL" ? "Zobacz projekt tutaj" : "See project here"}
       </a>
       <a
         className="portfolio__link"
@@ -49,7 +64,7 @@ const Portfolio = () => {
         target="_blank"
         rel="noreferrer noopener"
       >
-        Kod dostępny tutaj
+        {props.lang === "PL" ? "Kod dostępny tutaj" : "Code available here"}
       </a>
     </div>
   ));

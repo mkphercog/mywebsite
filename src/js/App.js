@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import "../styles/App.scss";
 import Header from "./layouts/Header";
@@ -7,13 +7,22 @@ import Page from "./layouts/Page";
 import Footer from "./layouts/Footer";
 
 function App() {
+  const [language, setLanguage] = useState("PL");
+
+  const handleClick = lang => {
+    setLanguage(lang);
+    // console.log(lang);
+  };
+
   return (
     <Router>
       <div className="app">
-        <nav className="app__nav">{<Navigation />}</nav>
-        <header className="app__header">{<Header />}</header>
-        <section className="app__page">{<Page />}</section>
-        <footer className="app__footer">{<Footer />}</footer>
+        <nav className="app__nav">
+          {<Navigation click={handleClick} lang={language} />}
+        </nav>
+        <header className="app__header">{<Header lang={language} />}</header>
+        <section className="app__page">{<Page lang={language} />}</section>
+        <footer className="app__footer">{<Footer lang={language} />}</footer>
       </div>
     </Router>
   );

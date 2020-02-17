@@ -10,37 +10,47 @@ const hobbiesIMG = [
   {
     url: coding,
     alt: "Coding",
-    description: "Programowanie wciąga i jest moją pasją ale..."
+    descriptionPL: "Programowanie wciąga i jest moją pasją, ale...",
+    descriptionEN: "Programming is addictive and this is my passion, but..."
   },
   {
     url: cooking,
     alt: "Cooking",
-    description:
-      "...nie samym programowaniem człowiek żyje. Jeść trzeba! Tak, lubię gotować. :)"
+    descriptionPL:
+      "...nie samym programowaniem człowiek żyje. Jeść trzeba! Tak, lubię gotować. :)",
+    descriptionEN:
+      "...it's hard to live just programming. We need to eat! Yes, I like cooking. :)"
   },
   {
     url: books,
     alt: "Books",
-    description: "Lubię też dobrą książkę, głównie fantastykę."
+    descriptionPL: "Lubię też dobrą książkę, głównie fantastykę.",
+    descriptionEN: "I like good book, often it's a fantastic genre."
   },
   {
     url: rolls,
     alt: "Rolls",
-    description:
-      "Trochę aktywności też się zjadzie w tym wszystkim np. jazda na rolkach."
+    descriptionPL:
+      "Trochę aktywności też się znajdzie w tym wszystkim np. jazda na rolkach.",
+    descriptionEN:
+      "A bit of activity will also be found in all this, e.g. rollerblading."
   },
   {
     url: music,
     alt: "Music",
-    description:
-      "I muzyka, która zwykle mi towarzyszy! Czasem nawet zdarza mi się grywać na instrumentach."
+    descriptionPL:
+      "I muzyka, która zwykle mi towarzyszy! Czasem nawet zdarza mi się grywać na instrumentach.",
+    descriptionEN:
+      "And the music that usually accompanies me! Sometimes I even play instruments."
   }
 ];
 
-const Hobbies = () => {
+const Hobbies = props => {
   const hobbiesImgArr = hobbiesIMG.map(item => (
     <div className="hobbies__wrapper" key={item.alt}>
-      <p className="hobbies__description">{item.description}</p>
+      <p className="hobbies__description">
+        {props.lang === "PL" ? item.descriptionPL : item.descriptionEN}
+      </p>
       <img className="hobbies__img" src={item.url} alt={item.alt} />
     </div>
   ));

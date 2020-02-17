@@ -3,32 +3,38 @@ import { NavLink } from "react-router-dom";
 import "../../styles/Navigation.scss";
 import MenuIcon from "../components/MenuIcon";
 import ExitIcon from "../components/ExitIcon";
+import Language from "../components/Language";
 
 const navItems = [
   {
-    name: "O mnie",
+    namePL: "O mnie",
+    nameEN: "About",
     path: "/",
     exact: true
   },
   {
-    name: "Doświadczenie",
+    namePL: "Doświadczenie",
+    nameEN: "Experience",
     path: "/experience"
   },
   {
-    name: "Umiejętności",
+    namePL: "Umiejętności",
+    nameEN: "Skills",
     path: "/skills"
   },
   {
-    name: "Zainteresowania",
+    namePL: "Zainteresowania",
+    nameEN: "Hobbies",
     path: "/hobbies"
   },
   {
-    name: "Portfolio",
+    namePL: "Portfolio",
+    nameEN: "Portfolio",
     path: "/portfolio"
   }
 ];
 
-const Navigation = () => {
+const Navigation = props => {
   const [showMenu, setShowMenu] = useState(false);
   const [positionMenu, setPositionMenu] = useState(-100);
   const animationSpeed = 8;
@@ -72,14 +78,14 @@ const Navigation = () => {
   // --
 
   const nav = navItems.map(item => (
-    <li className="nav__item" key={item.name}>
+    <li className="nav__item" key={item.namePL}>
       <NavLink
         className="nav__link"
         to={item.path}
         exact={item.exact ? item.exact : false}
         onClick={() => setShowMenu(false)}
       >
-        {item.name}
+        {props.lang === "PL" ? item.namePL : item.nameEN}
       </NavLink>
     </li>
   ));
@@ -93,6 +99,7 @@ const Navigation = () => {
         }}
       >
         <ExitIcon click={() => setShowMenu(false)} />
+        <Language click={props.click} lang={props.lang} />
         {nav}{" "}
       </ul>
       <MenuIcon showMenu={showMenu} click={() => setShowMenu(true)} />
