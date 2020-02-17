@@ -1,4 +1,5 @@
 @import "mixins.scss";
+@import "variables.scss";
 
 .experience {
   @include animation();
@@ -40,7 +41,7 @@
 
   .experience__companyName {
     padding: 5px;
-    background-color: goldenrod;
+    background-color: $main-color;
     color: white;
     font-size: 24px;
 
@@ -75,7 +76,7 @@
 
   .experience__text--boldGolden {
     font-weight: bold;
-    color: goldenrod;
+    color: $main-color;
   }
 
   .experience__text--fz {

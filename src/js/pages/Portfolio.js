@@ -6,7 +6,7 @@ const projects = [
     namePL: "Budżet domowy",
     nameEN: "Home budget",
     descriptionPL:
-      "Mini projekt do obliczania swoich wydatków. Całość projektu napisałem z wykorzystaniem biblioteki React.",
+      "Budżet domowy do mini aplikacja do obliczania swoich wydatków. Jest to mój pierwszy samodzielny projekt z wykorzystaniem biblioteki React. ",
     descriptionEN:
       "A mini project to calculate your expenses. I wrote the whole project using the React library.",
     urlWeb: "https://mkphercog.github.io/React-Apps/",
@@ -15,17 +15,17 @@ const projects = [
   {
     namePL: "Saper",
     nameEN: "Sapper",
-    descriptionPL: "Gra saper, niestety kodu się wstydzę, ale... działa.",
-    descriptionEN:
-      "Minesweeper game, unfortunately the code is ashamed, but ... works.",
+    descriptionPL:
+      "Gra saper to przede wszystkim ćwiczenie JavaScriptu, kod nie jest idealny, ale... działa!",
+    descriptionEN: "Sapper game, code sucks, but... works!",
     urlWeb: "https://mkphercog.github.io/SapperTestingVersion/",
     urlCode: "https://github.com/mkphercog/SapperTestingVersion"
   },
   {
     namePL: "Kalkulator",
     nameEN: "Calculator",
-    descriptionPL: "Prosty kalkulator napisany w HTML, CSS i JS.",
-    descriptionEN: "A simple calculator written in HTML, CSS and JS.",
+    descriptionPL: "Prosty kalkulator.",
+    descriptionEN: "A simple calculator.",
     urlWeb: "https://mkphercog.github.io/calculator/",
     urlCode: "https://github.com/mkphercog/calculator"
   },
@@ -33,7 +33,7 @@ const projects = [
     namePL: "Pierwsza wizytówka",
     nameEN: "My first card",
     descriptionPL:
-      "Pierwsza wizytówka to moje początki przygody z HTML, CSS i trochę JS.",
+      "Ten projekt to moje początki przygody z HTML, CSS i trochę JS. Uczyłem się tutaj jak zrobić responsywną stonę ala wizytówka.",
     descriptionEN:
       "The first business card is my beginnings with HTML, CSS and some JS.",
     urlWeb: "https://mkphercog.github.io/my-first-web-JS/",

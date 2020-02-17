@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .nav {
   display: flex;
   flex-direction: column;
@@ -13,7 +15,7 @@
 
   @media (min-width: 1024px) {
     flex-direction: row;
-    max-width: 1280px;
+    max-width: 1600px;
     height: auto;
     left: auto;
     align-items: flex-start;
@@ -30,7 +32,7 @@
       border-bottom: 2px solid white;
       text-transform: uppercase;
       text-decoration: none;
-      color: goldenrod;
+      color: $main-color;
 
       @media (min-width: 411px) {
         padding: 25px 35px;
@@ -58,7 +60,7 @@
         border-bottom: 2px white solid;
       }
       .nav__link.active {
-        border-bottom: 2px solid goldenrod;
+        border-bottom: 2px solid $main-color;
       }
     }
   }

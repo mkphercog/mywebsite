@@ -1,4 +1,5 @@
 @import "mixins.scss";
+@import "variables.scss";
 
 .hobbies {
   @include animation();
@@ -27,7 +28,7 @@
       text-align: center;
       background-color: #eee;
       line-height: 150%;
-      border-top: 2px solid goldenrod;
+      border-top: 2px solid $main-color;
 
       @media (min-width: 768px) {
         margin: 10px 30px;

@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .menu-icon {
   position: fixed;
   top: 0;
@@ -7,7 +9,7 @@
   .fa-caret-down {
     font-size: 65px;
     transform: rotate(90deg);
-    color: goldenrod;
+    color: $main-color;
 
     @media (min-width: 411px) {
       font-size: 75px;
