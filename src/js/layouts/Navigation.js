@@ -64,16 +64,18 @@ const Navigation = props => {
       setShowMenu(false);
     }
 
-    window.addEventListener("resize", () => {
-      let windowWidth = window.innerWidth;
-      if (windowWidth >= 1024) {
-        setPositionMenu("auto");
-        setShowMenu(true);
-      } else if (windowWidth < 1024) {
-        setPositionMenu(-100);
-        setShowMenu(false);
-      }
-    });
+    if (window.innerWidth >= 800 && window.innerHeight >= 600) {
+      window.addEventListener("resize", () => {
+        let windowWidth = window.innerWidth;
+        if (windowWidth >= 1024) {
+          setPositionMenu("auto");
+          setShowMenu(true);
+        } else if (windowWidth < 1024) {
+          setPositionMenu(-100);
+          setShowMenu(false);
+        }
+      });
+    }
   };
   // --
 
