@@ -27,7 +27,10 @@ const Language = props => {
       >
         EN
       </button>
-      <span className="language__icon">&#151;</span>
+
+      <span className="language__icon">
+        <i class="fas fa-globe"></i>
+      </span>
     </div>
   );
 };
