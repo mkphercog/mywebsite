@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/mywebsite/static/css/main.3c8e976c.chunk.css",
+    "main.js": "/mywebsite/static/js/main.f06eca2c.chunk.js",
+    "main.js.map": "/mywebsite/static/js/main.f06eca2c.chunk.js.map",
+    "runtime-main.js": "/mywebsite/static/js/runtime-main.d4259911.js",
+    "runtime-main.js.map": "/mywebsite/static/js/runtime-main.d4259911.js.map",
+    "static/js/2.1fd65eeb.chunk.js": "/mywebsite/static/js/2.1fd65eeb.chunk.js",
+    "static/js/2.1fd65eeb.chunk.js.map": "/mywebsite/static/js/2.1fd65eeb.chunk.js.map",
+    "index.html": "/mywebsite/index.html",
+    "precache-manifest.78335e9320177367c4c1c5fb09f1f37b.js": "/mywebsite/precache-manifest.78335e9320177367c4c1c5fb09f1f37b.js",
+    "service-worker.js": "/mywebsite/service-worker.js",
+    "static/css/main.3c8e976c.chunk.css.map": "/mywebsite/static/css/main.3c8e976c.chunk.css.map",
+    "static/js/2.1fd65eeb.chunk.js.LICENSE.txt": "/mywebsite/static/js/2.1fd65eeb.chunk.js.LICENSE.txt",
+    "static/media/ErrorImg.jpg": "/mywebsite/static/media/ErrorImg.e5959df9.jpg",
+    "static/media/books.jpg": "/mywebsite/static/media/books.3addfe05.jpg",
+    "static/media/coding.jpg": "/mywebsite/static/media/coding.f8630396.jpg",
+    "static/media/cooking.jpg": "/mywebsite/static/media/cooking.5805a1a3.jpg",
+    "static/media/music.jpg": "/mywebsite/static/media/music.cc052f1f.jpg",
+    "static/media/About.scss": "/mywebsite/static/media/myFace.ed3ee6ef.jpg",
+    "static/media/rolls.jpg": "/mywebsite/static/media/rolls.f3003625.jpg",
+    "static/media/slider2.jpg": "/mywebsite/static/media/slider2.1bca5754.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d4259911.js",
+    "static/js/2.1fd65eeb.chunk.js",
+    "static/css/main.3c8e976c.chunk.css",
+    "static/js/main.f06eca2c.chunk.js"
+  ]
+}
