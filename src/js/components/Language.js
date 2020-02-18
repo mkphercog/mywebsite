@@ -29,7 +29,7 @@ const Language = props => {
       </button>
 
       <span className="language__icon">
-        <i class="fas fa-globe"></i>
+        <i className="fas fa-globe"></i>
       </span>
     </div>
   );
