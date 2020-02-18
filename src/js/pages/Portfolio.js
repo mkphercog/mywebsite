@@ -33,7 +33,7 @@ const projects = [
     namePL: "Pierwsza wizytówka",
     nameEN: "My first card",
     descriptionPL:
-      "Ten projekt to moje początki przygody z HTML, CSS i trochę JS. Uczyłem się tutaj jak zrobić responsywną stonę ala wizytówka.",
+      "Ten projekt to moje początki przygody z HTML, CSS i trochę JS. Uczyłem się tutaj jak zrobić responsywną stonę à la wizytówka.",
     descriptionEN:
       "The first business card is my beginnings with HTML, CSS and some JS.",
     urlWeb: "https://mkphercog.github.io/my-first-web-JS/",

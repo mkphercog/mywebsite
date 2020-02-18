@@ -7,22 +7,59 @@ import Hobbies from "../pages/Hobbies";
 import Portfolio from "../pages/Portfolio";
 import ErrorPage from "../pages/ErrorPage";
 
+function scrollAnimate() {
+  if (window.scrollY > 0) {
+    window.scrollTo(0, window.scrollY - 10);
+    setTimeout(scrollAnimate, 0.5);
+  }
+}
+
 const Page = props => {
   return (
     <>
       <Switch>
-        <Route exact path="/" render={() => <About lang={props.lang} />} />
+        <Route
+          exact
+          path="/"
+          render={() => {
+            scrollAnimate();
+            return <About lang={props.lang} />;
+          }}
+        />
         <Route
           path="/experience"
-          render={() => <Experience lang={props.lang} />}
+          render={() => {
+            scrollAnimate();
+            return <Experience lang={props.lang} />;
+          }}
         />
-        <Route path="/skills" render={() => <Skills lang={props.lang} />} />
-        <Route path="/hobbies" render={() => <Hobbies lang={props.lang} />} />
+        <Route
+          path="/skills"
+          render={() => {
+            scrollAnimate();
+            return <Skills lang={props.lang} />;
+          }}
+        />
+        <Route
+          path="/hobbies"
+          render={() => {
+            scrollAnimate();
+            return <Hobbies lang={props.lang} />;
+          }}
+        />
         <Route
           path="/portfolio"
-          render={() => <Portfolio lang={props.lang} />}
+          render={() => {
+            scrollAnimate();
+            return <Portfolio lang={props.lang} />;
+          }}
         />
-        <Route render={() => <ErrorPage lang={props.lang} />} />
+        <Route
+          render={() => {
+            scrollAnimate();
+            return <ErrorPage lang={props.lang} />;
+          }}
+        />
       </Switch>
     </>
   );

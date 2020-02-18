@@ -32,7 +32,7 @@ const expInfo = [
     datePL: "02.2018 - obecnie",
     dateEN: "02.2018 - now",
     descriptionPL:
-      "Przygotowywanie ofert stolarki otworowej dla klienta włoskiego, dbanie o prawidłowe przygotowanie oferty pod względem technologicznym, dokumentacja ofert, współpraca z technologami, obsługa biura.",
+      "Przygotowywanie ofert stolarki otworowej dla klienta włoskiego, dbanie o prawidłowe przygotowanie oferty pod względem technologicznym, archiwizacja ofert, współpraca z technologami, obsługa biura.",
     descriptionEN: "Translation in near future..."
   }
 ];

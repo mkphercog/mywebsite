@@ -55,12 +55,14 @@
         border-bottom: 2px transparent solid;
       }
     }
+
+    .active {
+      border-bottom: 2px solid $main-color;
+    }
+
     @media (min-width: 1024px) {
       :hover {
         border-bottom: 2px white solid;
-      }
-      .nav__link.active {
-        border-bottom: 2px solid $main-color;
       }
     }
   }
