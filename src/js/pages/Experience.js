@@ -11,8 +11,7 @@ const expInfo = [
     dateEN: "10.2013 - 12.2014",
     descriptionPL:
       "Praca manualna przy tworzeniu i montowaniu reklam, oklejanie samochodów, tworzenie podstawowych grafik, obsługa klienta detalicznego, przyjmowanie zamówień.",
-    descriptionEN:
-      "Manual work on creating and fitting ads, wrapping cars, creating basic graphics, retail customer service, taking orders."
+    descriptionEN: "Translation in near future..."
   },
   {
     id: 2,
@@ -23,8 +22,7 @@ const expInfo = [
     dateEN: "10.2015 - 11.2017",
     descriptionPL:
       "Administracja sklepów internetowych, przyjmowanie zamówień, kontakt mailowy i telefoniczny z klientem polskim i zagranicznym, wystawianie faktur i paragonów, podstawowa obróbka zdjęć i wykonywanie prostych grafik.",
-    descriptionEN:
-      "Administration of online stores, taking orders, e-mail and telephone contact with Polish and foreign customers, issuing invoices and receipts, basic photo processing and making simple graphics."
+    descriptionEN: "Translation in near future..."
   },
   {
     id: 3,
@@ -35,8 +33,7 @@ const expInfo = [
     dateEN: "02.2018 - now",
     descriptionPL:
       "Przygotowywanie ofert stolarki otworowej dla klienta włoskiego, dbanie o prawidłowe przygotowanie oferty pod względem technologicznym, dokumentacja ofert, współpraca z technologami, obsługa biura.",
-    descriptionEN:
-      "Preparing offers for joinery for an Italian customer, taking care of the correct preparation of the offer in terms of technology, documentation of offers, cooperation with technologists, office service."
+    descriptionEN: "Translation in near future..."
   }
 ];
 

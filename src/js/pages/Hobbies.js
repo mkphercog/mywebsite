@@ -25,7 +25,7 @@ const hobbiesIMG = [
     url: books,
     alt: "Books",
     descriptionPL: "Lubię też dobrą książkę, głównie fantastykę.",
-    descriptionEN: "I like good book, often it's a fantastic genre."
+    descriptionEN: "I like also good book, often it's a fantastic genre."
   },
   {
     url: rolls,
@@ -33,7 +33,7 @@ const hobbiesIMG = [
     descriptionPL:
       "Trochę aktywności też się znajdzie w tym wszystkim np. jazda na rolkach.",
     descriptionEN:
-      "A bit of activity will also be found in all this, e.g. rollerblading."
+      "A bit of activity will also be found in all of this, e.g. rollerblading."
   },
   {
     url: music,

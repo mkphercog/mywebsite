@@ -16,8 +16,10 @@ programowania, tym razem postawiłem na HTML, CSS i JavaScript (+ React)
 za namową znajomego. Jest to mój wielki powrót do programowania po
 latach z czego bardzo się cieszę! :)`;
 
-const textEN = `My name is Martin Hercog. I'm ${yearNow -
-  yearOfMyBirth} years old.I started my programming adventure in technical school. However, along the way many things prevented me from focusing only on this passion. In my life I met Pascal and C# (at school), C# and Java (on my own right after school) but it was not the knowledge that would allow me to start work, so programming has always been somewhere in the background. In september 2019 I decided to go back to the programming topic again, this time I focused on HTML, CSS and JavaScript (+ React) at the urging of a friend. This is my great return to programming after years of which I am very happy! :)`;
+// const textEN = `My name is Martin Hercog. I'm ${yearNow -
+//   yearOfMyBirth} years old.I started my programming adventure in technical school. However, along the way many things prevented me from focusing only on this passion. In my life I met Pascal and C# (at school), C# and Java (on my own right after school) but it was not the knowledge that would allow me to start work, so programming has always been somewhere in the background. In september 2019 I decided to go back to the programming topic again, this time I focused on HTML, CSS and JavaScript (+ React) at the urging of a friend. This is my great return to programming after years of which I am very happy! :)`;
+
+const textEN = `Translation in near future... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem ratione possimus, temporibus nisi vero laborum officia animi quos dicta deserunt quisquam id obcaecati totam quasi perferendis natus incidunt explicabo debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem ratione possimus, temporibus nisi vero laborum officia animi quos dicta deserunt quisquam id obcaecati totam quasi perferendis natus incidunt explicabo debitis.`;
 
 const About = props => {
   return (
