@@ -40,10 +40,11 @@
   }
 
   .experience__companyName {
-    padding: 5px;
+    padding: 10px;
     background-color: $main-color;
     color: white;
     font-size: 24px;
+    box-shadow: 0 0 2px 0 gray;
 
     @media (min-width: 768px) {
       font-size: 29px;
@@ -55,11 +56,13 @@
   }
 
   .experience__text {
+    margin-top: 8px;
     padding: 6px 10px;
     font-size: 18px;
     text-align: justify;
     background-color: #eee;
     line-height: 150%;
+    box-shadow: 0 0 2px 0 gray;
 
     @media (min-width: 768px) {
       font-size: 22px;

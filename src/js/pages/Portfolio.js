@@ -6,7 +6,7 @@ const projects = [
     namePL: "Budżet domowy",
     nameEN: "Home budget",
     descriptionPL:
-      "Budżet domowy do mini aplikacja do obliczania swoich wydatków. Jest to mój pierwszy samodzielny projekt z wykorzystaniem biblioteki React. ",
+      "Budżet domowy to mini aplikacja do obliczania swoich wydatków. Jest to mój pierwszy samodzielny projekt z wykorzystaniem biblioteki React. ",
     descriptionEN:
       "A mini project to calculate your expenses. I wrote the whole project using the React library.",
     urlWeb: "https://mkphercog.github.io/React-Apps/",

@@ -56,7 +56,9 @@ const Skills = props => {
           style={{
             width: `${item.progress}%`,
             height: "100%",
-            backgroundColor: "goldenrod"
+            backgroundColor: "goldenrod",
+            borderTopRightRadius: "5px",
+            borderBottomRightRadius: "5px"
           }}
         ></div>
       </div>

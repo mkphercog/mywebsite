@@ -11,6 +11,9 @@
     min-height: 50vh;
     height: 65vh;
     overflow: hidden;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 0 3px 0 black;
   }
   .app__nav {
     width: 100%;

@@ -30,6 +30,7 @@
         font-size: 30px;
       }
     }
+
     .portfolio__link {
       display: block;
       width: 70%;
@@ -39,7 +40,8 @@
       text-align: center;
       text-transform: uppercase;
       text-decoration: none;
-      color: black;
+      color: $main-color;
+      font-weight: bold;
       border: 2px solid $main-color;
 
       @media (min-width: 411) {
@@ -57,6 +59,7 @@
         transition: 0.2s;
       }
     }
+
     @media (min-width: 1024px) {
       .portfolio__link:hover {
         color: white;
