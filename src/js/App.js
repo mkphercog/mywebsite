@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import "../styles/App.scss";
 import Header from "./layouts/Header";
 import Navigation from "./layouts/Navigation";
@@ -15,7 +15,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <HashRouter basename="/">
       <div className="app">
         <nav className="app__nav">
           {<Navigation click={handleClick} lang={language} />}
@@ -24,7 +24,7 @@ function App() {
         <section className="app__page">{<Page lang={language} />}</section>
         <footer className="app__footer">{<Footer lang={language} />}</footer>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
