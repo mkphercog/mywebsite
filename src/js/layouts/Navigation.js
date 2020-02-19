@@ -45,10 +45,10 @@ const Navigation = props => {
   }
 
   if (showMenu && positionMenu < 0) {
-    setTimeout(() => menuSlide(1), animationSpeed);
+    setTimeout(() => menuSlide(2), animationSpeed);
   }
   if (!showMenu && positionMenu > -100) {
-    setTimeout(() => menuSlide(-1), animationSpeed);
+    setTimeout(() => menuSlide(-2), animationSpeed);
   }
   //--
 

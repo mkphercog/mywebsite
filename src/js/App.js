@@ -11,7 +11,6 @@ function App() {
 
   const handleClick = lang => {
     setLanguage(lang);
-    // console.log(lang);
   };
 
   return (
