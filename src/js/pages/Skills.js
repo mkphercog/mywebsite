@@ -17,6 +17,10 @@ const programing = [
   {
     name: "React",
     progress: 23
+  },
+  {
+    name: "GIT",
+    progress: 24
   }
 ];
 

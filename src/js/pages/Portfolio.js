@@ -3,6 +3,16 @@ import "../../styles/Portfolio.scss";
 
 const projects = [
   {
+    namePL: "Aplikacja pogodowa",
+    nameEN: "Weather App",
+    descriptionPL:
+      "Aplikacja korzysta z zewnętrznych danych na temat pogody w dowolnym mieście na świecie wykorzystując zapytania do API Open Weather Map.",
+    descriptionEN:
+      "This application uses data from API Open Weather Map for check weather in every town in the world. ??",
+    urlWeb: "https://mkphercog.github.io/weatherapp/",
+    urlCode: "https://github.com/mkphercog/weatherapp"
+  },
+  {
     namePL: "Budżet domowy",
     nameEN: "Home budget",
     descriptionPL:
@@ -38,6 +48,14 @@ const projects = [
       "The first business card is my beginnings with HTML, CSS and some JS.",
     urlWeb: "https://mkphercog.github.io/my-first-web-JS/",
     urlCode: "https://github.com/mkphercog/my-first-web-JS"
+  },
+  {
+    namePL: "Aktualna strona",
+    nameEN: "Current website",
+    descriptionPL: "Zapraszam do zapoznania się z kodem aktualnej strony.",
+    descriptionEN: "I invite You to check code of this website.",
+    urlWeb: "https://mkphercog.github.io/mywebsite/",
+    urlCode: "https://github.com/mkphercog/mywebsite/tree/develop"
   }
 ];
 
