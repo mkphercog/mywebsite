@@ -1,90 +1,55 @@
 import React from "react";
 import "./Skills.scss";
+import INFO from "../../web-informations.json";
 
-const programing = [
-  {
-    name: "HTML",
-    progress: 28
-  },
-  {
-    name: "CSS/SCSS",
-    progress: 29
-  },
-  {
-    name: "JavaScript",
-    progress: 25
-  },
-  {
-    name: "React",
-    progress: 23
-  },
-  {
-    name: "GIT",
-    progress: 24
-  }
-];
+const {
+  PL_PROGRAMMING_TITLE,
+  PROGRAMMING,
+  PL_OTHER_TITLE,
+  PL_OTHER
+} = INFO.PL.SKILLS;
+const { EN_PROGRAMMING_TITLE, EN_OTHER_TITLE, EN_OTHER } = INFO.EN.SKILLS;
 
-const otherSkills = [
-  {
-    textPL: "Prawo jazdy kategorii B (od 10.2012)",
-    textEN: "Category B driving license (since 10.2012)"
-  },
-  {
-    textPL: "Dobra znajomość programu Corel Draw i Photoshop",
-    textEN: "Good knowledge of Corel Draw and Photoshop"
-  },
-  {
-    textPL: "Pracowitość, dokładność",
-    textEN: "Diligence, accuracy"
-  },
-  {
-    textPL: "Szybkie przyswajanie wiedzy, zaangażowanie",
-    textEN: "Fast learning, involvement"
-  },
-  {
-    textPL: "Łatwość w nawiązywaniu kontaktów",
-    textEN: "Easy to make contacts"
-  },
-  {
-    textPL: "Język angielski - komunikatywny",
-    textEN: "Communicative English level"
-  }
-];
+let PROGRAMMING_TO_SHOW = [];
+let SKILLS_TO_SHOW = [];
 
 export const Skills = props => {
-  const skillsArr = programing.map(item => (
+  PROGRAMMING_TO_SHOW = PROGRAMMING.map(item => (
     <div key={item.name}>
       <h3 className="skills__name">{item.name}</h3>
       <div className="skills__bar">
         <div
+          className="skills__progress"
           style={{
-            width: `${item.progress}%`,
-            height: "100%",
-            backgroundColor: "goldenrod",
-            borderTopRightRadius: "5px",
-            borderBottomRightRadius: "5px"
+            width: `${item.progress}%`
           }}
         ></div>
       </div>
     </div>
   ));
 
-  const otherArr = otherSkills.map(item => (
-    <h3 key={item.textPL} className="skills__name skills__name--alone">
-      {props.lang === "PL" ? item.textPL : item.textEN}
-    </h3>
-  ));
+  const setLangSkillsList = lang => {
+    SKILLS_TO_SHOW = lang === "PL" ? PL_OTHER : EN_OTHER;
+
+    SKILLS_TO_SHOW = SKILLS_TO_SHOW.map((item, index) => (
+      <h3 key={index} className="skills__name skills__name--alone">
+        {item.text}
+      </h3>
+    ));
+  };
+
+  setLangSkillsList(props.lang);
 
   return (
     <div className="skills">
       <h1 className="skills__title">
-        {props.lang === "PL" ? "Programowanie" : "Programming"}
+        {props.lang === "PL" ? PL_PROGRAMMING_TITLE : EN_PROGRAMMING_TITLE}
       </h1>
-      {skillsArr}
+      {PROGRAMMING_TO_SHOW}
       <h1 className="skills__title">
-        {props.lang === "PL" ? "Inne" : "Other"}
+        {props.lang === "PL" ? PL_OTHER_TITLE : EN_OTHER_TITLE}
       </h1>
-      {otherArr}
+      {SKILLS_TO_SHOW}
     </div>
   );
 };

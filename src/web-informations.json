@@ -40,6 +40,52 @@
           "date": "09.2009 - 04.2013"
         }
       ]
+    },
+    "SKILLS": {
+      "PL_PROGRAMMING_TITLE": "Programowanie",
+      "PROGRAMMING": [
+        {
+          "name": "HTML",
+          "progress": 28
+        },
+        {
+          "name": "CSS/SCSS",
+          "progress": 29
+        },
+        {
+          "name": "JavaScript",
+          "progress": 25
+        },
+        {
+          "name": "React",
+          "progress": 23
+        },
+        {
+          "name": "GIT",
+          "progress": 24
+        }
+      ],
+      "PL_OTHER_TITLE": "Inne",
+      "PL_OTHER": [
+        {
+          "text": "Prawo jazdy kategorii B (od 10.2012)"
+        },
+        {
+          "text": "Dobra znajomość programu Corel Draw i Photoshop"
+        },
+        {
+          "text": "Pracowitość, dokładność"
+        },
+        {
+          "text": "Szybkie przyswajanie wiedzy, zaangażowanie"
+        },
+        {
+          "text": "Łatwość w nawiązywaniu kontaktów"
+        },
+        {
+          "text": "Język angielski - komunikatywny"
+        }
+      ]
     }
   },
 
@@ -82,6 +128,30 @@
           "schoolName": "Technikum nr 2 w ZSE, Wodzisław Śl.",
           "profile": "IT specialist ",
           "date": "09.2009 - 04.2013"
+        }
+      ]
+    },
+    "SKILLS": {
+      "EN_PROGRAMMING_TITLE": "Programowanie",
+      "EN_OTHER_TITLE": "Other",
+      "EN_OTHER": [
+        {
+          "text": "Driving licence (category B since 10.2012)"
+        },
+        {
+          "text": "Good knowledge of Corel Draw and Photoshop"
+        },
+        {
+          "text": "Diligence, accuracy"
+        },
+        {
+          "text": "Ability to learn quickly, involvement at work"
+        },
+        {
+          "text": "Good interpersonal skills"
+        },
+        {
+          "text": "English – pre-intermediate/intermediate"
         }
       ]
     }
