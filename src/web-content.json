@@ -105,6 +105,48 @@
           "description": "I muzyka, która zwykle mi towarzyszy! Czasem nawet zdarza mi się grywać na instrumentach."
         }
       ]
+    },
+    "PORTFOLIO": {
+      "PL_PROJECTS_LIST": [
+        {
+          "name": "Aplikacja pogodowa",
+          "description": "Aplikacja korzysta z zewnętrznych danych na temat pogody w dowolnym mieście na świecie wykorzystując zapytania do API Open Weather Map.",
+          "urlWeb": "https://mkphercog.github.io/weatherapp/",
+          "urlCode": "https://github.com/mkphercog/weatherapp"
+        },
+        {
+          "name": "Budżet domowy",
+          "description": "Budżet domowy to mini aplikacja do obliczania swoich wydatków. Jest to mój pierwszy samodzielny projekt z wykorzystaniem biblioteki React. ",
+          "urlWeb": "https://mkphercog.github.io/React-Apps/",
+          "urlCode": "https://github.com/mkphercog/React-Apps/tree/homeBudget"
+        },
+        {
+          "name": "Saper",
+          "description": "Gra saper to przede wszystkim ćwiczenie JavaScriptu, kod nie jest idealny, ale... działa!",
+          "urlWeb": "https://mkphercog.github.io/SapperTestingVersion/",
+          "urlCode": "https://github.com/mkphercog/SapperTestingVersion"
+        },
+        {
+          "name": "Kalkulator",
+          "description": "Prosty kalkulator.",
+          "urlWeb": "https://mkphercog.github.io/calculator/",
+          "urlCode": "https://github.com/mkphercog/calculator"
+        },
+        {
+          "name": "Pierwsza wizytówka",
+          "description": "Ten projekt to moje początki przygody z HTML, CSS i trochę JS. Uczyłem się tutaj jak zrobić responsywną stonę à la wizytówka.",
+          "urlWeb": "https://mkphercog.github.io/my-first-web-JS/",
+          "urlCode": "https://github.com/mkphercog/my-first-web-JS"
+        },
+        {
+          "name": "Aktualna strona",
+          "description": "Zapraszam do zapoznania się z kodem aktualnej strony.",
+          "urlWeb": "https://mkphercog.github.io/mywebsite/",
+          "urlCode": "https://github.com/mkphercog/mywebsite/tree/develop"
+        }
+      ],
+      "PL_BTN_SEE_HERE": "Zobacz projekt tutaj",
+      "PL_BTN_CODE_HERE": "Kod dostępny tutaj"
     }
   },
 
@@ -192,6 +234,48 @@
           "description": "And music which usually accompanies me! Sometimes I happen to play instruments."
         }
       ]
+    },
+    "PORTFOLIO": {
+      "EN_PROJECTS_LIST": [
+        {
+          "name": "Weather App",
+          "description": "This application uses data from API Open Weather Map for check weather in every town in the world.",
+          "urlWeb": "https://mkphercog.github.io/weatherapp/",
+          "urlCode": "https://github.com/mkphercog/weatherapp"
+        },
+        {
+          "name": "Home Budget",
+          "description": "It's a mini app for home budget. That’s my first own project based on React library.",
+          "urlWeb": "https://mkphercog.github.io/React-Apps/",
+          "urlCode": "https://github.com/mkphercog/React-Apps/tree/homeBudget"
+        },
+        {
+          "name": "The game Sapper",
+          "description": "Just to practice JavaScript, the code isn’t perfect, but …it works!",
+          "urlWeb": "https://mkphercog.github.io/SapperTestingVersion/",
+          "urlCode": "https://github.com/mkphercog/SapperTestingVersion"
+        },
+        {
+          "name": "Calculator",
+          "description": "A simple calculator.",
+          "urlWeb": "https://mkphercog.github.io/calculator/",
+          "urlCode": "https://github.com/mkphercog/calculator"
+        },
+        {
+          "name": "The first business card",
+          "description": "The project is the beginning of my adventure with HTML, CSS and a bit of JS. I learned here how to make a responsive page like a business card. ",
+          "urlWeb": "https://mkphercog.github.io/my-first-web-JS/",
+          "urlCode": "https://github.com/mkphercog/my-first-web-JS"
+        },
+        {
+          "name": "Current website",
+          "description": "I invite You to check code of this website.",
+          "urlWeb": "https://mkphercog.github.io/mywebsite/",
+          "urlCode": "https://github.com/mkphercog/mywebsite/tree/develop"
+        }
+      ],
+      "EN_BTN_SEE_HERE": "See the project here",
+      "EN_BTN_CODE_HERE": "Code available here"
     }
   }
 }

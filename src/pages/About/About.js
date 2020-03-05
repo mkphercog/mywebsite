@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.scss";
-import INFO from "../../web-informations.json";
+import INFO from "../../web-content.json";
 
 const myAge = new Date().getFullYear() - 1993;
 const { PL_HELLO, PL_DESCRIPTION1, PL_DESCRIPTION2 } = INFO.PL.ABOUT;

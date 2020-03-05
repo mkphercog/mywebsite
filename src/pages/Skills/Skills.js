@@ -1,6 +1,6 @@
 import React from "react";
 import "./Skills.scss";
-import INFO from "../../web-informations.json";
+import INFO from "../../web-content.json";
 
 const {
   PL_PROGRAMMING_TITLE,

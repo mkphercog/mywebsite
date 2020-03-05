@@ -5,7 +5,7 @@ import cooking from "../../images/cooking.jpg";
 import books from "../../images/books.jpg";
 import rolls from "../../images/rolls.jpg";
 import music from "../../images/music.jpg";
-import INFO from "../../web-informations.json";
+import INFO from "../../web-content.json";
 
 const { PL_DESCRIPTION } = INFO.PL.HOBBIES;
 const { EN_DESCRIPTION } = INFO.EN.HOBBIES;
