@@ -1,18 +1,18 @@
 import React from "react";
 import "./Portfolio.scss";
-import INFO from "../../web-content.json";
+import CONTENT from "../../pages-content.json";
 
 const {
   PL_PROJECTS_LIST,
   PL_BTN_SEE_HERE,
   PL_BTN_CODE_HERE
-} = INFO.PL.PORTFOLIO;
+} = CONTENT.PL.PORTFOLIO;
 
 const {
   EN_PROJECTS_LIST,
   EN_BTN_SEE_HERE,
   EN_BTN_CODE_HERE
-} = INFO.EN.PORTFOLIO;
+} = CONTENT.EN.PORTFOLIO;
 
 let PROJECTS_TO_SHOW = [];
 

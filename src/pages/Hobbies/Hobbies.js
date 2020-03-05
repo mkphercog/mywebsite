@@ -5,10 +5,10 @@ import cooking from "../../images/cooking.jpg";
 import books from "../../images/books.jpg";
 import rolls from "../../images/rolls.jpg";
 import music from "../../images/music.jpg";
-import INFO from "../../web-content.json";
+import CONTENT from "../../pages-content.json";
 
-const { PL_DESCRIPTION } = INFO.PL.HOBBIES;
-const { EN_DESCRIPTION } = INFO.EN.HOBBIES;
+const { PL_DESCRIPTION } = CONTENT.PL.HOBBIES;
+const { EN_DESCRIPTION } = CONTENT.EN.HOBBIES;
 
 const hobbiesIMG = [
   {

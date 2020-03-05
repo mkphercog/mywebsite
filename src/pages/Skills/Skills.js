@@ -1,14 +1,14 @@
 import React from "react";
 import "./Skills.scss";
-import INFO from "../../web-content.json";
+import CONTENT from "../../pages-content.json";
 
 const {
   PL_PROGRAMMING_TITLE,
   PROGRAMMING,
   PL_OTHER_TITLE,
   PL_OTHER
-} = INFO.PL.SKILLS;
-const { EN_PROGRAMMING_TITLE, EN_OTHER_TITLE, EN_OTHER } = INFO.EN.SKILLS;
+} = CONTENT.PL.SKILLS;
+const { EN_PROGRAMMING_TITLE, EN_OTHER_TITLE, EN_OTHER } = CONTENT.EN.SKILLS;
 
 let PROGRAMMING_TO_SHOW = [];
 let SKILLS_TO_SHOW = [];

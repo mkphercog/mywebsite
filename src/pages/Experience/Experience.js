@@ -1,20 +1,20 @@
 import React from "react";
 import "./Experience.scss";
-import INFO from "../../web-content.json";
+import CONTENT from "../../pages-content.json";
 
 const {
   PL_WORK_TITLE,
   PL_EXPERIENCE_LIST,
   PL_EDUCATION_TITLE,
   PL_SCHOOLS_LIST
-} = INFO.PL.EXPERIENCE;
+} = CONTENT.PL.EXPERIENCE;
 
 const {
   EN_WORK_TITLE,
   EN_EXPERIENCE_LIST,
   EN_EDUCATION_TITLE,
   EN_SCHOOLS_LIST
-} = INFO.EN.EXPERIENCE;
+} = CONTENT.EN.EXPERIENCE;
 
 let EXPERIENCE_TO_SHOW = [];
 let SCHOOLS_TO_SHOW = [];

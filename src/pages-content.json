@@ -147,6 +147,10 @@
       ],
       "PL_BTN_SEE_HERE": "Zobacz projekt tutaj",
       "PL_BTN_CODE_HERE": "Kod dostępny tutaj"
+    },
+    "ERROR_PAGE": {
+      "PL_ARE_YOU_LOST": "Zabłądziłeś??",
+      "PL_BACK_TO_MAIN_PAGE": "Wróć na stronę główną"
     }
   },
 
@@ -276,6 +280,10 @@
       ],
       "EN_BTN_SEE_HERE": "See the project here",
       "EN_BTN_CODE_HERE": "Code available here"
+    },
+    "ERROR_PAGE": {
+      "EN_ARE_YOU_LOST": "Are you lost??",
+      "EN_BACK_TO_MAIN_PAGE": "Back to main page"
     }
   }
 }
