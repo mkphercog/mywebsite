@@ -1,0 +1,62 @@
+@import "../../styles/variables.scss";
+
+.language {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+
+  @media (min-width: 1024px) {
+    position: fixed;
+    bottom: 10px;
+    left: -110px;
+    display: flex;
+    transition: 0.2s;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-left: 5px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .language__btn {
+    padding: 10px;
+    margin: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+    border: 2px solid $main-color;
+    background-color: transparent;
+    outline: none;
+
+    .active {
+      background-color: $main-color;
+    }
+
+    @media (min-width: 411px) {
+      font-size: 17px;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 24px;
+    }
+    @media (min-width: 1024px) {
+      font-size: 16px;
+    }
+  }
+
+  .language__icon {
+    display: none;
+    @media (min-width: 1024px) {
+      display: block;
+      color: white;
+      font-size: 30px;
+      margin: auto 10px auto 20px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .language:hover {
+    left: 0px;
+  }
+}

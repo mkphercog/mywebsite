@@ -1,0 +1,24 @@
+@import "../../styles/variables.scss";
+
+.menu-icon {
+  position: fixed;
+  top: 0;
+  padding: 5px;
+  z-index: 99;
+
+  .fa-caret-down {
+    font-size: 65px;
+    transform: rotate(90deg);
+    color: $main-color;
+
+    @media (min-width: 411px) {
+      font-size: 75px;
+    }
+    @media (min-width: 768px) {
+      font-size: 90px;
+    }
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  }
+}
