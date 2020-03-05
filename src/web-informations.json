@@ -1,0 +1,17 @@
+{
+  "PL": {
+    "ABOUT": {
+      "PL_HELLO": "Witaj!",
+      "PL_DESCRIPTION1": "Nazywam się Marcin Hercog i mam ",
+      "PL_DESCRIPTION2": " lat. Swoją przygodę z programowaniem zacząłem już w technikum, jednak po drodze wiele spraw przeszkadzało mi w skupieniu się wyłącznie na tej pasji. W szkole zaznajomiłem się z Pascalem i C++, a po jej ukończeniu, już we własnym zakresie, z C# i Javą. Nie była to jednak wiedza na poziomie, który pozwoliłby rozpocząć pracę zawodową, dlatego też programowanie zawsze było gdzieś na drugim planie. Na początku września 2019 postanowiłem wrócić do programowania. Tym razem postawiłem na HTML, CSS i, za namową znajomego, JavaScript (+ React). Jest to mój wielki powrót do programowania po latach, z czego bardzo się cieszę! :)"
+    }
+  },
+
+  "EN": {
+    "ABOUT": {
+      "EN_HELLO": "Hello!",
+      "EN_DESCRIPTION1": "My name is Martin Hercog, I am ",
+      "EN_DESCRIPTION2": " years old. I already started my adventure with programming when I was in secondary school. Unfortunately, a lot of things on the way did not let me focus only on this passion. At school I learnt Pascal and C++, and after finishing school, on my own, C# and Java. However, the knowledge I had was not sufficient enough to start professional work, and because of that programming was always in the background. At the beginning of September 2019 I decided to take up programming again. That time I took up HTML, CSS and, thanks to my friend, Java Script (+React). It’s my great comeback to programming and I am very happy about that! :)"
+    }
+  }
+}
