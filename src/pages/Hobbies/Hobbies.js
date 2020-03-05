@@ -5,55 +5,45 @@ import cooking from "../../images/cooking.jpg";
 import books from "../../images/books.jpg";
 import rolls from "../../images/rolls.jpg";
 import music from "../../images/music.jpg";
+import INFO from "../../web-informations.json";
+
+const { PL_DESCRIPTION } = INFO.PL.HOBBIES;
+const { EN_DESCRIPTION } = INFO.EN.HOBBIES;
 
 const hobbiesIMG = [
   {
     url: coding,
-    alt: "Coding",
-    descriptionPL: "Programowanie wciąga i jest moją pasją, ale...",
-    descriptionEN: "Programming is addictive and this is my passion, but..."
+    alt: "Coding"
   },
   {
     url: cooking,
-    alt: "Cooking",
-    descriptionPL:
-      "...nie samym programowaniem człowiek żyje. Jeść trzeba! Tak, lubię gotować. :)",
-    descriptionEN:
-      "...it's hard to live just programming. We need to eat! Yes, I like cooking. :)"
+    alt: "Cooking"
   },
   {
     url: books,
-    alt: "Books",
-    descriptionPL: "Lubię też dobrą książkę, głównie fantastykę.",
-    descriptionEN: "I like also good book, often it's a fantastic genre."
+    alt: "Books"
   },
   {
     url: rolls,
-    alt: "Rolls",
-    descriptionPL:
-      "Trochę aktywności też się znajdzie w tym wszystkim np. jazda na rolkach.",
-    descriptionEN:
-      "A bit of activity will also be found in all of this, e.g. rollerblading."
+    alt: "Rolls"
   },
   {
     url: music,
-    alt: "Music",
-    descriptionPL:
-      "I muzyka, która zwykle mi towarzyszy! Czasem nawet zdarza mi się grywać na instrumentach.",
-    descriptionEN:
-      "And the music that usually accompanies me! Sometimes I even play instruments."
+    alt: "Music"
   }
 ];
 
 export const Hobbies = props => {
-  const hobbiesImgArr = hobbiesIMG.map(item => (
+  const HOBBIES_TO_SHOW = hobbiesIMG.map((item, index) => (
     <div className="hobbies__wrapper" key={item.alt}>
       <p className="hobbies__description">
-        {props.lang === "PL" ? item.descriptionPL : item.descriptionEN}
+        {props.lang === "PL"
+          ? PL_DESCRIPTION[index].description
+          : EN_DESCRIPTION[index].description}
       </p>
       <img className="hobbies__img" src={item.url} alt={item.alt} />
     </div>
   ));
 
-  return <div className="hobbies">{hobbiesImgArr}</div>;
+  return <div className="hobbies">{HOBBIES_TO_SHOW}</div>;
 };

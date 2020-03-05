@@ -86,6 +86,25 @@
           "text": "Język angielski - komunikatywny"
         }
       ]
+    },
+    "HOBBIES": {
+      "PL_DESCRIPTION": [
+        {
+          "description": "Programowanie wciąga i jest moją pasją, ale..."
+        },
+        {
+          "description": "...nie samym programowaniem człowiek żyje. Jeść trzeba! Tak, lubię gotować. :)"
+        },
+        {
+          "description": "Lubię też dobrą książkę, głównie fantastykę."
+        },
+        {
+          "description": "Trochę aktywności też się znajdzie w tym wszystkim np. jazda na rolkach."
+        },
+        {
+          "description": "I muzyka, która zwykle mi towarzyszy! Czasem nawet zdarza mi się grywać na instrumentach."
+        }
+      ]
     }
   },
 
@@ -152,6 +171,25 @@
         },
         {
           "text": "English – pre-intermediate/intermediate"
+        }
+      ]
+    },
+    "HOBBIES": {
+      "EN_DESCRIPTION": [
+        {
+          "description": "Programming  is absorbing and is my passion, but.."
+        },
+        {
+          "description": "…man does not live on it alone. You need to eat! Yes, I like cooking. :)"
+        },
+        {
+          "description": "I also like good books, especially fantasy."
+        },
+        {
+          "description": "There is also time for physical activity eg. roller skating."
+        },
+        {
+          "description": "And music which usually accompanies me! Sometimes I happen to play instruments."
         }
       ]
     }
