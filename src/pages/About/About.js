@@ -2,9 +2,7 @@ import React from "react";
 import "./About.scss";
 import INFO from "../../web-informations.json";
 
-const yearNow = new Date().getFullYear();
-const yearOfMyBirth = 1993;
-const myAge = yearNow - yearOfMyBirth;
+const myAge = new Date().getFullYear() - 1993;
 const { PL_HELLO, PL_DESCRIPTION1, PL_DESCRIPTION2 } = INFO.PL.ABOUT;
 const { EN_HELLO, EN_DESCRIPTION1, EN_DESCRIPTION2 } = INFO.EN.ABOUT;
 

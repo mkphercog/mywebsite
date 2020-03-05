@@ -4,6 +4,42 @@
       "PL_HELLO": "Witaj!",
       "PL_DESCRIPTION1": "Nazywam się Marcin Hercog i mam ",
       "PL_DESCRIPTION2": " lat. Swoją przygodę z programowaniem zacząłem już w technikum, jednak po drodze wiele spraw przeszkadzało mi w skupieniu się wyłącznie na tej pasji. W szkole zaznajomiłem się z Pascalem i C++, a po jej ukończeniu, już we własnym zakresie, z C# i Javą. Nie była to jednak wiedza na poziomie, który pozwoliłby rozpocząć pracę zawodową, dlatego też programowanie zawsze było gdzieś na drugim planie. Na początku września 2019 postanowiłem wrócić do programowania. Tym razem postawiłem na HTML, CSS i, za namową znajomego, JavaScript (+ React). Jest to mój wielki powrót do programowania po latach, z czego bardzo się cieszę! :)"
+    },
+
+    "EXPERIENCE": {
+      "PL_WORK_TITLE": "Doświadczenie zawodowe",
+      "PL_EXPERIENCE_LIST": [
+        {
+          "id": 1,
+          "companyName": "Studio Reklamy \"Prymus II\"",
+          "profession": "Montażysta reklam",
+          "date": "10.2013 - 12.2014",
+          "description": "Praca manualna przy tworzeniu i montowaniu reklam, oklejanie samochodów, tworzenie podstawowych grafik, obsługa klienta detalicznego, przyjmowanie zamówień."
+        },
+        {
+          "id": 2,
+          "companyName": "Donaco Sp z o.o.",
+          "profession": "Pracownik biurowy",
+          "date": "10.2015 - 11.2017",
+          "description": "Administracja sklepów internetowych, przyjmowanie zamówień, kontakt mailowy i telefoniczny z klientem polskim i zagranicznym, wystawianie faktur i paragonów, podstawowa obróbka zdjęć i wykonywanie prostych grafik."
+        },
+        {
+          "id": 3,
+          "companyName": "Eko Okna S.A.",
+          "profession": "Pracownik biurowy",
+          "date": "02.2018 - obecnie",
+          "description": "Przygotowywanie ofert stolarki otworowej dla klienta włoskiego, dbanie o prawidłowe przygotowanie oferty pod względem technologicznym, archiwizacja ofert, współpraca z technologami, obsługa biura."
+        }
+      ],
+      "PL_EDUCATION_TITLE": "Edukacja",
+      "PL_SCHOOLS_LIST": [
+        {
+          "id": 1,
+          "schoolName": "Technikum nr 2 w ZSE, Wodzisław Śl.",
+          "profile": "Profil informatyczny",
+          "date": "09.2009 - 04.2013"
+        }
+      ]
     }
   },
 
@@ -12,6 +48,42 @@
       "EN_HELLO": "Hello!",
       "EN_DESCRIPTION1": "My name is Martin Hercog, I am ",
       "EN_DESCRIPTION2": " years old. I already started my adventure with programming when I was in secondary school. Unfortunately, a lot of things on the way did not let me focus only on this passion. At school I learnt Pascal and C++, and after finishing school, on my own, C# and Java. However, the knowledge I had was not sufficient enough to start professional work, and because of that programming was always in the background. At the beginning of September 2019 I decided to take up programming again. That time I took up HTML, CSS and, thanks to my friend, Java Script (+React). It’s my great comeback to programming and I am very happy about that! :)"
+    },
+
+    "EXPERIENCE": {
+      "EN_WORK_TITLE": "Work experience",
+      "EN_EXPERIENCE_LIST": [
+        {
+          "id": 1,
+          "companyName": "Studio Reklamy \"Prymus II\"",
+          "profession": "Ad fitter",
+          "date": "10.2013 - 12.2014",
+          "description": "Manual work with making and installing light hoarding, car wrapping, designing basic graphics, retail customer service, order placement."
+        },
+        {
+          "id": 2,
+          "companyName": "Donaco Sp z o.o.",
+          "profession": "Office worker",
+          "date": "10.2015 - 11.2017",
+          "description": "Online shop administration, order placement, phone and mail contacts with Polish and foreign customers, invoicing, basic photo editing and designing simple graphics."
+        },
+        {
+          "id": 3,
+          "companyName": "Eko Okna S.A.",
+          "profession": "Office worker",
+          "date": "02.2018 - now",
+          "description": "Preparation of the quotation of window and door joinery for Italian customers, controlling of technical offer preparation, archiving offers, cooperation with technologists, administrative support of the office."
+        }
+      ],
+      "EN_EDUCATION_TITLE": "Education",
+      "EN_SCHOOLS_LIST": [
+        {
+          "id": 1,
+          "schoolName": "Technikum nr 2 w ZSE, Wodzisław Śl.",
+          "profile": "IT specialist ",
+          "date": "09.2009 - 04.2013"
+        }
+      ]
     }
   }
 }
