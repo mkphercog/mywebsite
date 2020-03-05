@@ -1,7 +1,7 @@
 import React from "react";
 import "./LanguageIcons.scss";
 
-const LanguageIcons = props => {
+export const LanguageIcons = props => {
   const stylePL =
     props.lang === "PL"
       ? { backgroundColor: "goldenrod" }
@@ -34,5 +34,3 @@ const LanguageIcons = props => {
     </div>
   );
 };
-
-export default LanguageIcons;

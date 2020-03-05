@@ -47,7 +47,7 @@ const schoolInfo = [
   }
 ];
 
-const Experience = props => {
+export const Experience = props => {
   const expArr = expInfo.map((item, index) => {
     const side =
       index % 2 ? "experience__wrapper--right" : "experience__wrapper--left";
@@ -100,5 +100,3 @@ const Experience = props => {
     </>
   );
 };
-
-export default Experience;

@@ -59,7 +59,7 @@ const projects = [
   }
 ];
 
-const Portfolio = props => {
+export const Portfolio = props => {
   const projectsArr = projects.map(project => (
     <div key={project.namePL} className="portfolio__wrapper">
       <h1 className="portfolio__title">
@@ -89,5 +89,3 @@ const Portfolio = props => {
 
   return <div className="portfolio">{projectsArr}</div>;
 };
-
-export default Portfolio;

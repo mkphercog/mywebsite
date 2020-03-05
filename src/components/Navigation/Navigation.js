@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navigation.scss";
-import MenuIcon from "../MenuIcon/MenuIcon";
-import ExitIcon from "../ExitIcon/ExitIcon";
-import Language from "../LanguageIcons/LanguageIcons";
+import { MenuIcon } from "../MenuIcon/MenuIcon";
+import { ExitIcon } from "../ExitIcon/ExitIcon";
+import { LanguageIcons } from "../LanguageIcons/LanguageIcons";
 
 const navItems = [
   {
@@ -34,15 +34,15 @@ const navItems = [
   }
 ];
 
-const Navigation = props => {
+export const Navigation = props => {
   const [showMenu, setShowMenu] = useState(false);
   const [positionMenu, setPositionMenu] = useState(-100);
   const animationSpeed = 8;
 
   //menu animation when mobile or width < 1024px
-  function menuSlide(num) {
+  const menuSlide = num => {
     setPositionMenu(positionMenu + `${num}` * 1);
-  }
+  };
 
   if (showMenu && positionMenu < 0) {
     setTimeout(() => menuSlide(2), animationSpeed);
@@ -101,12 +101,10 @@ const Navigation = props => {
         }}
       >
         <ExitIcon click={() => setShowMenu(false)} />
-        <Language click={props.click} lang={props.lang} />
+        <LanguageIcons click={props.click} lang={props.lang} />
         {nav}{" "}
       </ul>
       <MenuIcon showMenu={showMenu} click={() => setShowMenu(true)} />
     </>
   );
 };
-
-export default Navigation;

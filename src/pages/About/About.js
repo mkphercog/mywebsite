@@ -9,20 +9,16 @@ const textPL = `Nazywam się Marcin Hercog i mam ${yearNow -
 
 const textEN = `Translation in near future... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem ratione possimus, temporibus nisi vero laborum officia animi quos dicta deserunt quisquam id obcaecati totam quasi perferendis natus incidunt explicabo debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem ratione possimus, temporibus nisi vero laborum officia animi quos dicta deserunt quisquam id obcaecati totam quasi perferendis natus incidunt explicabo debitis.`;
 
-const About = props => {
-  return (
-    <div className="about">
-      <div className="about__foto"></div>
-      <div className="about__wrapText">
-        <h1 className="about__welcome">
-          {props.lang === "PL" ? "Witaj!" : "Hello!"}
-        </h1>
-        <p className="about__description">
-          {props.lang === "PL" ? textPL : textEN}
-        </p>
-      </div>
+export const About = props => (
+  <div className="about">
+    <div className="about__foto"></div>
+    <div className="about__wrapText">
+      <h1 className="about__welcome">
+        {props.lang === "PL" ? "Witaj!" : "Hello!"}
+      </h1>
+      <p className="about__description">
+        {props.lang === "PL" ? textPL : textEN}
+      </p>
     </div>
-  );
-};
-
-export default About;
+  </div>
+);

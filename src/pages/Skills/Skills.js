@@ -51,7 +51,7 @@ const otherSkills = [
   }
 ];
 
-const Skills = props => {
+export const Skills = props => {
   const skillsArr = programing.map(item => (
     <div key={item.name}>
       <h3 className="skills__name">{item.name}</h3>
@@ -88,5 +88,3 @@ const Skills = props => {
     </div>
   );
 };
-
-export default Skills;

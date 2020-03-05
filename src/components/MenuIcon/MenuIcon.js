@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "./MenuIcon.scss";
 
-const MenuIcon = ({ showMenu, click }) => {
+export const MenuIcon = ({ showMenu, click }) => {
   const [positionIcon, setPositionIcon] = useState(0);
   const animationSpeed = 8;
 
-  function iconSlide(num) {
+  const iconSlide = num => {
     setPositionIcon(positionIcon + `${num}` * 1);
-  }
+  };
 
   if (!showMenu && positionIcon < 0) {
     setTimeout(() => iconSlide(1), animationSpeed);
@@ -26,5 +26,3 @@ const MenuIcon = ({ showMenu, click }) => {
     </div>
   );
 };
-
-export default MenuIcon;

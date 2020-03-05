@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { HashRouter } from "react-router-dom";
 import "./App.scss";
-import Header from "./components/Header/Header";
-import Navigation from "./components/Navigation/Navigation";
-import Page from "./components/Page/Page";
-import Footer from "./components/Footer/Footer";
+import { Header } from "./components/Header/Header";
+import { Navigation } from "./components/Navigation/Navigation";
+import { Page } from "./components/Page/Page";
+import { Footer } from "./components/Footer/Footer";
 
-function App() {
+export const App = () => {
   const [language, setLanguage] = useState("PL");
 
   const handleClick = lang => {
@@ -25,6 +25,4 @@ function App() {
       </div>
     </HashRouter>
   );
-}
-
-export default App;
+};

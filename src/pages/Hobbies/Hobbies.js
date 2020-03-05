@@ -45,7 +45,7 @@ const hobbiesIMG = [
   }
 ];
 
-const Hobbies = props => {
+export const Hobbies = props => {
   const hobbiesImgArr = hobbiesIMG.map(item => (
     <div className="hobbies__wrapper" key={item.alt}>
       <p className="hobbies__description">
@@ -57,5 +57,3 @@ const Hobbies = props => {
 
   return <div className="hobbies">{hobbiesImgArr}</div>;
 };
-
-export default Hobbies;

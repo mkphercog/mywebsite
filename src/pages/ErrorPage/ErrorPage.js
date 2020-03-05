@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import "./ErrorPage.scss";
 import ErrorImg from "../../images/ErrorImg.jpg";
 
-const ErrorPage = props => {
+export const ErrorPage = props => {
   const history = useHistory();
   return (
     <div className="errorPage">
@@ -24,5 +24,3 @@ const ErrorPage = props => {
     </div>
   );
 };
-
-export default ErrorPage;
