@@ -7,6 +7,7 @@ import rolls from "../../images/rolls.jpg";
 import music from "../../images/music.jpg";
 import CONTENT from "../../pages-content.json";
 
+const { PL_LANGUAGE } = CONTENT.PL;
 const { PL_DESCRIPTION } = CONTENT.PL.HOBBIES;
 const { EN_DESCRIPTION } = CONTENT.EN.HOBBIES;
 
@@ -33,11 +34,11 @@ const hobbiesIMG = [
   }
 ];
 
-export const Hobbies = props => {
+export const Hobbies = ({ selectedLanguage }) => {
   const HOBBIES_TO_SHOW = hobbiesIMG.map((item, index) => (
-    <div className="hobbies__wrapper" key={item.alt}>
+    <div className="hobbies__wrapper" key={index}>
       <p className="hobbies__description">
-        {props.lang === "PL"
+        {selectedLanguage === PL_LANGUAGE
           ? PL_DESCRIPTION[index].description
           : EN_DESCRIPTION[index].description}
       </p>

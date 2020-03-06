@@ -2,6 +2,7 @@ import React from "react";
 import "./Skills.scss";
 import CONTENT from "../../pages-content.json";
 
+const { PL_LANGUAGE } = CONTENT.PL;
 const {
   PL_PROGRAMMING_TITLE,
   PROGRAMMING,
@@ -10,11 +11,8 @@ const {
 } = CONTENT.PL.SKILLS;
 const { EN_PROGRAMMING_TITLE, EN_OTHER_TITLE, EN_OTHER } = CONTENT.EN.SKILLS;
 
-let PROGRAMMING_TO_SHOW = [];
-let SKILLS_TO_SHOW = [];
-
-export const Skills = props => {
-  PROGRAMMING_TO_SHOW = PROGRAMMING.map(item => (
+export const Skills = ({ selectedLanguage }) => {
+  const PROGRAMMING_TO_SHOW = PROGRAMMING.map(item => (
     <div key={item.name}>
       <h3 className="skills__name">{item.name}</h3>
       <div className="skills__bar">
@@ -28,26 +26,24 @@ export const Skills = props => {
     </div>
   ));
 
-  const setLangSkillsList = lang => {
-    SKILLS_TO_SHOW = lang === "PL" ? PL_OTHER : EN_OTHER;
+  let SKILLS_TO_SHOW = selectedLanguage === PL_LANGUAGE ? PL_OTHER : EN_OTHER;
 
-    SKILLS_TO_SHOW = SKILLS_TO_SHOW.map((item, index) => (
-      <h3 key={index} className="skills__name skills__name--alone">
-        {item.text}
-      </h3>
-    ));
-  };
-
-  setLangSkillsList(props.lang);
+  SKILLS_TO_SHOW = SKILLS_TO_SHOW.map((item, index) => (
+    <h3 key={index} className="skills__name skills__name--alone">
+      {item.text}
+    </h3>
+  ));
 
   return (
     <div className="skills">
       <h1 className="skills__title">
-        {props.lang === "PL" ? PL_PROGRAMMING_TITLE : EN_PROGRAMMING_TITLE}
+        {selectedLanguage === PL_LANGUAGE
+          ? PL_PROGRAMMING_TITLE
+          : EN_PROGRAMMING_TITLE}
       </h1>
       {PROGRAMMING_TO_SHOW}
       <h1 className="skills__title">
-        {props.lang === "PL" ? PL_OTHER_TITLE : EN_OTHER_TITLE}
+        {selectedLanguage === PL_LANGUAGE ? PL_OTHER_TITLE : EN_OTHER_TITLE}
       </h1>
       {SKILLS_TO_SHOW}
     </div>

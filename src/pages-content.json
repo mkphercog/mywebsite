@@ -1,5 +1,6 @@
 {
   "PL": {
+    "PL_LANGUAGE": "PL",
     "ABOUT": {
       "PL_HELLO": "Witaj!",
       "PL_DESCRIPTION1": "Nazywam się Marcin Hercog i mam ",
@@ -41,6 +42,7 @@
         }
       ]
     },
+
     "SKILLS": {
       "PL_PROGRAMMING_TITLE": "Programowanie",
       "PROGRAMMING": [
@@ -87,6 +89,7 @@
         }
       ]
     },
+
     "HOBBIES": {
       "PL_DESCRIPTION": [
         {
@@ -106,6 +109,7 @@
         }
       ]
     },
+
     "PORTFOLIO": {
       "PL_PROJECTS_LIST": [
         {
@@ -146,8 +150,9 @@
         }
       ],
       "PL_BTN_SEE_HERE": "Zobacz projekt tutaj",
-      "PL_BTN_CODE_HERE": "Kod dostępny tutaj"
+      "PL_BTN_CODE_HERE": "Zobacz { kod } tutaj"
     },
+
     "ERROR_PAGE": {
       "PL_ARE_YOU_LOST": "Zabłądziłeś??",
       "PL_BACK_TO_MAIN_PAGE": "Wróć na stronę główną"
@@ -155,6 +160,7 @@
   },
 
   "EN": {
+    "EN_LANGUAGE": "EN",
     "ABOUT": {
       "EN_HELLO": "Hello!",
       "EN_DESCRIPTION1": "My name is Martin Hercog, I am ",
@@ -196,12 +202,13 @@
         }
       ]
     },
+
     "SKILLS": {
-      "EN_PROGRAMMING_TITLE": "Programowanie",
+      "EN_PROGRAMMING_TITLE": "Programming",
       "EN_OTHER_TITLE": "Other",
       "EN_OTHER": [
         {
-          "text": "Driving licence (category B since 10.2012)"
+          "text": "Driving licence category B (since 10.2012)"
         },
         {
           "text": "Good knowledge of Corel Draw and Photoshop"
@@ -220,6 +227,7 @@
         }
       ]
     },
+
     "HOBBIES": {
       "EN_DESCRIPTION": [
         {
@@ -239,6 +247,7 @@
         }
       ]
     },
+
     "PORTFOLIO": {
       "EN_PROJECTS_LIST": [
         {
@@ -279,8 +288,9 @@
         }
       ],
       "EN_BTN_SEE_HERE": "See the project here",
-      "EN_BTN_CODE_HERE": "Code available here"
+      "EN_BTN_CODE_HERE": "See { Code } here"
     },
+
     "ERROR_PAGE": {
       "EN_ARE_YOU_LOST": "Are you lost??",
       "EN_BACK_TO_MAIN_PAGE": "Back to main page"

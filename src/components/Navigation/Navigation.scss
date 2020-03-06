@@ -25,6 +25,7 @@
   .nav__item {
     width: 65%;
     text-align: center;
+
     .nav__link {
       display: block;
       padding: 20px 30px;
@@ -38,13 +39,16 @@
         padding: 25px 35px;
         font-size: 22px;
       }
+
       @media (min-width: 768px) {
         padding: 30px 40px;
         font-size: 28px;
       }
+
       @media (orientation: landscape) {
         padding: 10px 25px;
       }
+
       @media (min-width: 1024px) {
         padding: 15px 5px;
         margin: 5px;

@@ -1,0 +1,75 @@
+{
+  "PL": {
+    "PL_LANGUAGE": "PL",
+    "PL_NAME": "Marcin",
+    "PL_NAV": [
+      {
+        "name": "O mnie",
+        "path": "/",
+        "exact": true
+      },
+      {
+        "name": "Doświadczenie",
+        "path": "/experience",
+        "exact": false
+      },
+      {
+        "name": "Umiejętności",
+        "path": "/skills",
+        "exact": false
+      },
+      {
+        "name": "Zainteresowania",
+        "path": "/hobbies",
+        "exact": false
+      },
+      {
+        "name": "Portfolio",
+        "path": "/portfolio",
+        "exact": false
+      },
+      {
+        "name": "Error",
+        "path": "",
+        "exact": false
+      }
+    ]
+  },
+
+  "EN": {
+    "EN_LANGUAGE": "EN",
+    "EN_NAME": "Martin",
+    "EN_NAV": [
+      {
+        "name": "About",
+        "path": "/",
+        "exact": true
+      },
+      {
+        "name": "Experience",
+        "path": "/experience",
+        "exact": false
+      },
+      {
+        "name": "Skills",
+        "path": "/skills",
+        "exact": false
+      },
+      {
+        "name": "Hobbies",
+        "path": "/hobbies",
+        "exact": false
+      },
+      {
+        "name": "Portfolio",
+        "path": "/portfolio",
+        "exact": false
+      },
+      {
+        "name": "Error",
+        "path": "",
+        "exact": false
+      }
+    ]
+  }
+}

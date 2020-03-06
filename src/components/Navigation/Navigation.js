@@ -1,41 +1,18 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import "./Navigation.scss";
+
 import { MenuIcon } from "../MenuIcon/MenuIcon";
 import { ExitIcon } from "../ExitIcon/ExitIcon";
 import { LanguageIcons } from "../LanguageIcons/LanguageIcons";
 
-const navItems = [
-  {
-    namePL: "O mnie",
-    nameEN: "About",
-    path: "/",
-    exact: true
-  },
-  {
-    namePL: "Doświadczenie",
-    nameEN: "Experience",
-    path: "/experience"
-  },
-  {
-    namePL: "Umiejętności",
-    nameEN: "Skills",
-    path: "/skills"
-  },
-  {
-    namePL: "Zainteresowania",
-    nameEN: "Hobbies",
-    path: "/hobbies"
-  },
-  {
-    namePL: "Portfolio",
-    nameEN: "Portfolio",
-    path: "/portfolio"
-  }
-];
+import "./Navigation.scss";
+import CONTENT from "../../components-content.json";
 
-export const Navigation = props => {
-  const [showMenu, setShowMenu] = useState(false);
+const { PL_NAV, PL_LANGUAGE } = CONTENT.PL;
+const { EN_NAV } = CONTENT.EN;
+
+export const Navigation = ({ selectedLanguage, changeLanguage }) => {
+  const [isMenuVisible, setMenuVisible] = useState(false);
   const [positionMenu, setPositionMenu] = useState(-100);
   const animationSpeed = 8;
 
@@ -44,10 +21,10 @@ export const Navigation = props => {
     setPositionMenu(positionMenu + `${num}` * 1);
   };
 
-  if (showMenu && positionMenu < 0) {
+  if (isMenuVisible && positionMenu < 0) {
     setTimeout(() => menuSlide(2), animationSpeed);
   }
-  if (!showMenu && positionMenu > -100) {
+  if (!isMenuVisible && positionMenu > -100) {
     setTimeout(() => menuSlide(-2), animationSpeed);
   }
   //--
@@ -56,41 +33,46 @@ export const Navigation = props => {
   //I must do here setPositionMenu, because on desktop I need 'right: auto'
   //And after resize window < 1024px value must back to Number
   window.onload = () => {
-    if (window.innerWidth >= 1024 && !showMenu) {
+    if (window.innerWidth >= 1024 && !isMenuVisible) {
       setPositionMenu("auto");
-      setShowMenu(true);
+      setMenuVisible(true);
     } else {
       setPositionMenu(-100);
-      setShowMenu(false);
+      setMenuVisible(false);
     }
 
     if (window.innerWidth >= 800 && window.innerHeight >= 600) {
       window.addEventListener("resize", () => {
-        let windowWidth = window.innerWidth;
+        const windowWidth = window.innerWidth;
         if (windowWidth >= 1024) {
           setPositionMenu("auto");
-          setShowMenu(true);
+          setMenuVisible(true);
         } else if (windowWidth < 1024) {
           setPositionMenu(-100);
-          setShowMenu(false);
+          setMenuVisible(false);
         }
       });
     }
   };
   // --
 
-  const nav = navItems.map(item => (
-    <li className="nav__item" key={item.namePL}>
+  let NAV_TO_SHOW = selectedLanguage === PL_LANGUAGE ? PL_NAV : EN_NAV;
+
+  NAV_TO_SHOW = NAV_TO_SHOW.map(item => (
+    <li className="nav__item" key={item.name}>
       <NavLink
         className="nav__link"
         to={item.path}
-        exact={item.exact ? item.exact : false}
-        onClick={() => setShowMenu(false)}
+        exact={item.exact}
+        onClick={() => setMenuVisible(false)}
       >
-        {props.lang === "PL" ? item.namePL : item.nameEN}
+        {item.name}
       </NavLink>
     </li>
   ));
+
+  //Delete "ERROR" from array, I need it in header but not here
+  NAV_TO_SHOW.pop();
 
   return (
     <>
@@ -100,11 +82,17 @@ export const Navigation = props => {
           right: [positionMenu === "auto" ? positionMenu : positionMenu + "vw"]
         }}
       >
-        <ExitIcon click={() => setShowMenu(false)} />
-        <LanguageIcons click={props.click} lang={props.lang} />
-        {nav}{" "}
+        <ExitIcon hideMenu={() => setMenuVisible(false)} />
+        <LanguageIcons
+          changeLanguage={changeLanguage}
+          selectedLanguage={selectedLanguage}
+        />
+        {NAV_TO_SHOW}
       </ul>
-      <MenuIcon showMenu={showMenu} click={() => setShowMenu(true)} />
+      <MenuIcon
+        isMenuVisible={isMenuVisible}
+        setMenuVisible={() => setMenuVisible(true)}
+      />
     </>
   );
 };

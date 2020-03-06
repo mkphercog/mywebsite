@@ -27,13 +27,13 @@
     }
   }
 
-  .experience__wrapper--left {
+  .experience__wrapper:nth-of-type(odd) {
     @media (min-width: 1024px) {
       margin: 25px 0 25px 30px;
     }
   }
 
-  .experience__wrapper--right {
+  .experience__wrapper:nth-of-type(even) {
     @media (min-width: 1024px) {
       margin: 25px 30px 25px auto;
     }

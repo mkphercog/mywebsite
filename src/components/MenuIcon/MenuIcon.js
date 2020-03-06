@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./MenuIcon.scss";
 
-export const MenuIcon = ({ showMenu, click }) => {
+export const MenuIcon = ({ isMenuVisible, setMenuVisible }) => {
   const [positionIcon, setPositionIcon] = useState(0);
   const animationSpeed = 8;
 
@@ -9,16 +9,16 @@ export const MenuIcon = ({ showMenu, click }) => {
     setPositionIcon(positionIcon + `${num}` * 1);
   };
 
-  if (!showMenu && positionIcon < 0) {
+  if (!isMenuVisible && positionIcon < 0) {
     setTimeout(() => iconSlide(1), animationSpeed);
   }
-  if (showMenu && positionIcon > -100) {
+  if (isMenuVisible && positionIcon > -100) {
     setTimeout(() => iconSlide(-1), animationSpeed);
   }
 
   return (
     <div
-      onClick={click}
+      onClick={setMenuVisible}
       className="menu-icon"
       style={{ right: positionIcon + "px" }}
     >
