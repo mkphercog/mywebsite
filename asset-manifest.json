@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/mywebsite/static/css/main.4065b82b.chunk.css",
-    "main.js": "/mywebsite/static/js/main.f0514c76.chunk.js",
-    "main.js.map": "/mywebsite/static/js/main.f0514c76.chunk.js.map",
+    "main.css": "/mywebsite/static/css/main.63953052.chunk.css",
+    "main.js": "/mywebsite/static/js/main.412a1095.chunk.js",
+    "main.js.map": "/mywebsite/static/js/main.412a1095.chunk.js.map",
     "runtime-main.js": "/mywebsite/static/js/runtime-main.d4259911.js",
     "runtime-main.js.map": "/mywebsite/static/js/runtime-main.d4259911.js.map",
-    "static/js/2.ca1d63f2.chunk.js": "/mywebsite/static/js/2.ca1d63f2.chunk.js",
-    "static/js/2.ca1d63f2.chunk.js.map": "/mywebsite/static/js/2.ca1d63f2.chunk.js.map",
+    "static/js/2.b2e61e3b.chunk.js": "/mywebsite/static/js/2.b2e61e3b.chunk.js",
+    "static/js/2.b2e61e3b.chunk.js.map": "/mywebsite/static/js/2.b2e61e3b.chunk.js.map",
     "index.html": "/mywebsite/index.html",
-    "precache-manifest.0c83391162acf09723586df803ad2b24.js": "/mywebsite/precache-manifest.0c83391162acf09723586df803ad2b24.js",
+    "precache-manifest.89d17967e639e457569b5a437f4858d4.js": "/mywebsite/precache-manifest.89d17967e639e457569b5a437f4858d4.js",
     "service-worker.js": "/mywebsite/service-worker.js",
-    "static/css/main.4065b82b.chunk.css.map": "/mywebsite/static/css/main.4065b82b.chunk.css.map",
-    "static/js/2.ca1d63f2.chunk.js.LICENSE.txt": "/mywebsite/static/js/2.ca1d63f2.chunk.js.LICENSE.txt",
+    "static/css/main.63953052.chunk.css.map": "/mywebsite/static/css/main.63953052.chunk.css.map",
+    "static/js/2.b2e61e3b.chunk.js.LICENSE.txt": "/mywebsite/static/js/2.b2e61e3b.chunk.js.LICENSE.txt",
     "static/media/ErrorImg.jpg": "/mywebsite/static/media/ErrorImg.e5959df9.jpg",
     "static/media/books.jpg": "/mywebsite/static/media/books.3addfe05.jpg",
     "static/media/coding.jpg": "/mywebsite/static/media/coding.f8630396.jpg",
     "static/media/cooking.jpg": "/mywebsite/static/media/cooking.5805a1a3.jpg",
     "static/media/music.jpg": "/mywebsite/static/media/music.cc052f1f.jpg",
-    "static/media/About.scss": "/mywebsite/static/media/myFace.ed3ee6ef.jpg",
+    "static/media/About.scss": "/mywebsite/static/media/myFace.c3d8d3e7.jpg",
     "static/media/rolls.jpg": "/mywebsite/static/media/rolls.f3003625.jpg",
-    "static/media/slider2.jpg": "/mywebsite/static/media/slider2.1bca5754.jpg"
+    "static/media/slider.jpg": "/mywebsite/static/media/slider.1bca5754.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.d4259911.js",
-    "static/js/2.ca1d63f2.chunk.js",
-    "static/css/main.4065b82b.chunk.css",
-    "static/js/main.f0514c76.chunk.js"
+    "static/js/2.b2e61e3b.chunk.js",
+    "static/css/main.63953052.chunk.css",
+    "static/js/main.412a1095.chunk.js"
   ]
 }
