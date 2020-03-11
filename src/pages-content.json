@@ -113,6 +113,12 @@
     "PORTFOLIO": {
       "PL_PROJECTS_LIST": [
         {
+          "name": "Aplikacja pogodowa",
+          "description": "Aplikacja korzysta z zewnętrznych danych na temat pogody w dowolnym mieście na świecie wykorzystując zapytania do API Open Weather Map.",
+          "urlWeb": "https://mkphercog.github.io/weatherapp/",
+          "urlCode": "https://github.com/mkphercog/weatherapp"
+        },
+        {
           "name": "Pierwsza wizytówka",
           "description": "Ten projekt to moje początki przygody z HTML, CSS i trochę JS. Uczyłem się tutaj jak zrobić responsywną stonę à la wizytówka.",
           "urlWeb": "https://mkphercog.github.io/my-first-web-JS/",
@@ -226,6 +232,12 @@
 
     "PORTFOLIO": {
       "EN_PROJECTS_LIST": [
+        {
+          "name": "Weather App",
+          "description": "This application uses data from API Open Weather Map to check weather in every town in the world.",
+          "urlWeb": "https://mkphercog.github.io/weatherapp/",
+          "urlCode": "https://github.com/mkphercog/weatherapp"
+        },
         {
           "name": "The first business card",
           "description": "The project is the beginning of my adventure with HTML, CSS and a bit of JS. I learned here how to make a responsive page like a business card. ",
