@@ -113,6 +113,12 @@
     "PORTFOLIO": {
       "PL_PROJECTS_LIST": [
         {
+          "name": "Music from Spotify",
+          "description": "Aplikacja wymaga zalogowania się do serwisu muzycznego Spotify. Dzięki tworzeniu tej aplikacji nauczyłem się jak działa autoryzacja OAuth. Jest to również pierwsza aplikacja napisana za pomocą TypeScript'a.",
+          "urlWeb": "https://mkphercog.github.io/musicfromspotify/",
+          "urlCode": "https://github.com/mkphercog/musicfromspotify"
+        },
+        {
           "name": "Aplikacja pogodowa",
           "description": "Aplikacja korzysta z zewnętrznych danych na temat pogody w dowolnym mieście na świecie wykorzystując zapytania do API Open Weather Map.",
           "urlWeb": "https://mkphercog.github.io/weatherapp/",
@@ -232,6 +238,12 @@
 
     "PORTFOLIO": {
       "EN_PROJECTS_LIST": [
+        {
+          "name": "Music from Spotify",
+          "description": "This application requires to login to music website Spotify. When I writing this application I learned how works authorization OAuth. This is first application written with TypeScript.",
+          "urlWeb": "https://mkphercog.github.io/musicfromspotify/",
+          "urlCode": "https://github.com/mkphercog/musicfromspotify"
+        },
         {
           "name": "Weather App",
           "description": "This application uses data from API Open Weather Map to check weather in every town in the world.",
