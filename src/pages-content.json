@@ -48,23 +48,27 @@
       "PROGRAMMING": [
         {
           "name": "HTML",
-          "progress": 28
+          "progress": 36
         },
         {
           "name": "CSS/SCSS",
-          "progress": 29
+          "progress": 37
         },
         {
           "name": "JavaScript",
-          "progress": 25
+          "progress": 33
         },
         {
           "name": "React",
-          "progress": 23
+          "progress": 31
+        },
+        {
+          "name": "TypeScript",
+          "progress": 15
         },
         {
           "name": "GIT",
-          "progress": 24
+          "progress": 25
         }
       ],
       "PL_OTHER_TITLE": "Inne",
@@ -112,6 +116,12 @@
 
     "PORTFOLIO": {
       "PL_PROJECTS_LIST": [
+        {
+          "name": "Space",
+          "description": "Reactowa aplikacja napisana z użyciem TypeScript, Routing (React Router), globalny stan (Redux). Space to wizualizacja działania prawdziwej strony social media. Wszelkie zmiany podczas sesji nie zostaną zapisane ze względu na brak podłączenia do backendu.",
+          "urlWeb": "https://mkphercog.github.io/space/",
+          "urlCode": "https://github.com/mkphercog/space"
+        },
         {
           "name": "Music from Spotify",
           "description": "Aplikacja wymaga zalogowania się do serwisu muzycznego Spotify. Dzięki tworzeniu tej aplikacji nauczyłem się jak działa autoryzacja OAuth. Jest to również pierwsza aplikacja napisana za pomocą TypeScript'a.",
@@ -238,6 +248,12 @@
 
     "PORTFOLIO": {
       "EN_PROJECTS_LIST": [
+        {
+          "name": "Space",
+          "description": "This is react app written with TypeScript, Routing (React Router), global state (Redux). Space is just visualization of real social media website. Any changes will not be saved, because app doesn't have backend side.",
+          "urlWeb": "https://mkphercog.github.io/space/",
+          "urlCode": "https://github.com/mkphercog/space"
+        },
         {
           "name": "Music from Spotify",
           "description": "The application requires loggin into Spotify. When I writing the app I learned how authorization OAuth works. This is first application written with TypeScript.",
