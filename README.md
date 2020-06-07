@@ -2,10 +2,16 @@
 
 Hello! This is my business card / CV.
 
-## If you want you can copy this business card and change information about yourself, for that use command:
+## If you want you can copy this app, for that use command:
 
 ```
-git clone https://github.com/mkphercog/mywebsite/tree/master
+git clone https://github.com/mkphercog/mywebsite.git
+```
+
+### After that in cloned folder use:
+
+```
+npm install
 ```
 
 ### Every changes you should do in "components-content.json" and "pages-content.json"
