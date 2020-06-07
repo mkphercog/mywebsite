@@ -12,6 +12,7 @@ git clone https://github.com/mkphercog/mywebsite/tree/master
 
 ## In this project I'm using:
 
+- react (CRA)
 - preprocessor SASS with methodology BEM
 - react-router
 
