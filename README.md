@@ -18,5 +18,5 @@ git clone https://github.com/mkphercog/mywebsite/tree/master
 ## See my business card here:
 
 ```
-[Marcin Hercog page](https://mkphercog.github.io/mywebsite/#/)
+[Marcin Hercog page](#https://mkphercog.github.io/mywebsite/#/)
 ```
