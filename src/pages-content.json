@@ -144,7 +144,7 @@
           "name": "Aktualna strona",
           "description": "Zapraszam do zapoznania się z kodem aktualnej strony.",
           "urlWeb": "https://mkphercog.github.io/mywebsite/",
-          "urlCode": "https://github.com/mkphercog/mywebsite/tree/develop"
+          "urlCode": "https://github.com/mkphercog/mywebsite/tree/master"
         }
       ],
       "PL_BTN_SEE_HERE": "Zobacz projekt tutaj",
@@ -276,7 +276,7 @@
           "name": "Current website",
           "description": "I invite You to check code of this website.",
           "urlWeb": "https://mkphercog.github.io/mywebsite/",
-          "urlCode": "https://github.com/mkphercog/mywebsite/tree/develop"
+          "urlCode": "https://github.com/mkphercog/mywebsite/tree/master"
         }
       ],
       "EN_BTN_SEE_HERE": "See the project here",
