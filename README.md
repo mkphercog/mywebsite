@@ -2,7 +2,7 @@
 
 Hello! This is my business card / CV.
 
-## If you want you can copy this business card and change information about yourself use command:
+## If you want you can copy this business card and change information about yourself, for that use command:
 
 ```
 git clone https://github.com/mkphercog/mywebsite/tree/master
@@ -12,11 +12,11 @@ git clone https://github.com/mkphercog/mywebsite/tree/master
 
 ## In this project I'm using:
 
-- preprocessor SASS with metodology BEM
+- preprocessor SASS with methodology BEM
 - react-router
 
 ## See my business card here:
 
 ```
-https://mkphercog.github.io/mywebsite/#/
+[Marcin Hercog page](https://mkphercog.github.io/mywebsite/#/)
 ```
