@@ -49,7 +49,7 @@
       height: 35vw;
     }
 
-    @media (min-width: 1600px) and (orientation: landscape) {
+    @media (min-width: $max-web-width) and (orientation: landscape) {
       margin-bottom: 60px;
     }
   }

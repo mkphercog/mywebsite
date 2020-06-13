@@ -15,59 +15,93 @@
 
   @media (min-width: 1024px) {
     flex-direction: row;
-    max-width: 1600px;
     height: auto;
+    right: auto;
     left: auto;
     align-items: flex-start;
     background-color: rgba(0, 0, 0, 0.6);
   }
 
-  .nav__item {
-    width: 65%;
-    text-align: center;
+  @media (min-width: $max-web-width) {
+    width: $max-web-width;
+  }
+}
 
-    .nav__link {
-      display: block;
-      padding: 20px 30px;
-      font-size: 18px;
-      border-bottom: 2px solid white;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: $main-color;
+.nav--show {
+  animation: show 0.4s linear both;
 
-      @media (min-width: 411px) {
-        padding: 25px 35px;
-        font-size: 22px;
-      }
-
-      @media (min-width: 768px) {
-        padding: 30px 40px;
-        font-size: 28px;
-      }
-
-      @media (orientation: landscape) {
-        padding: 10px 25px;
-      }
-
-      @media (min-width: 1024px) {
-        padding: 15px 5px;
-        margin: 5px;
-        font-size: 20px;
-        border-bottom: none;
-        cursor: pointer;
-        transition: 0.3s;
-        border-bottom: 2px transparent solid;
-      }
+  @keyframes show {
+    from {
+      right: -100vw;
     }
-
-    .active {
-      border-bottom: 2px solid $main-color;
-    }
-
-    @media (min-width: 1024px) {
-      :hover {
-        border-bottom: 2px white solid;
-      }
+    to {
+      right: 0;
     }
   }
+}
+
+.nav--hide {
+  animation: hide 0.4s linear both;
+
+  @keyframes hide {
+    from {
+      right: 0;
+    }
+    to {
+      right: -100vw;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    animation: none;
+  }
+}
+
+.nav__item {
+  width: 65%;
+  text-align: center;
+
+  @media (min-width: 1024px) {
+    :hover {
+      border-bottom: 2px white solid;
+    }
+  }
+}
+
+.nav__link {
+  display: block;
+  padding: 20px 30px;
+  font-size: 18px;
+  border-bottom: 2px solid white;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $main-color;
+
+  @media (min-width: 411px) {
+    padding: 25px 35px;
+    font-size: 22px;
+  }
+
+  @media (min-width: 768px) {
+    padding: 30px 40px;
+    font-size: 28px;
+  }
+
+  @media (orientation: landscape) {
+    padding: 10px 25px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 15px 5px;
+    margin: 5px;
+    font-size: 20px;
+    border-bottom: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-bottom: 2px transparent solid;
+  }
+}
+
+.active {
+  border-bottom: 2px solid $main-color;
 }
