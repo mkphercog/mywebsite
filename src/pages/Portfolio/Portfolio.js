@@ -1,8 +1,10 @@
 import React, { useMemo } from "react";
+import PropTypes from "prop-types";
 import "./Portfolio.scss";
 import CONTENT from "../../pages-content.json";
 
 const { PL_LANGUAGE } = CONTENT.PL;
+const { EN_LANGUAGE } = CONTENT.EN;
 const {
   PL_PROJECTS_LIST,
   PL_BTN_SEE_HERE,
@@ -50,4 +52,8 @@ export const Portfolio = ({ selectedLanguage }) => {
   );
 
   return <div className="portfolio">{projectsToRender}</div>;
+};
+
+Portfolio.propTypes = {
+  selectedLanguage: PropTypes.oneOf([PL_LANGUAGE, EN_LANGUAGE]),
 };

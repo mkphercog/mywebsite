@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from "react";
 import { NavLink } from "react-router-dom";
+import PropTypes from "prop-types";
 
 import { MenuIcon } from "../MenuIcon/MenuIcon";
 import { ExitIcon } from "../ExitIcon/ExitIcon";
@@ -9,7 +10,7 @@ import "./Navigation.scss";
 import CONTENT from "../../components-content.json";
 
 const { PL_NAV, PL_LANGUAGE } = CONTENT.PL;
-const { EN_NAV } = CONTENT.EN;
+const { EN_NAV, EN_LANGUAGE } = CONTENT.EN;
 const navShowClass = "nav--show";
 const navHideClass = "nav--hide";
 
@@ -52,4 +53,9 @@ export const Navigation = ({ selectedLanguage, changeLanguage }) => {
       />
     </>
   );
+};
+
+Navigation.propTypes = {
+  selectedLanguage: PropTypes.oneOf([PL_LANGUAGE, EN_LANGUAGE]),
+  changeLanguage: PropTypes.func,
 };

@@ -1,5 +1,6 @@
 import React, { useMemo } from "react";
 import { Switch, Route } from "react-router-dom";
+import PropTypes from "prop-types";
 
 import { About } from "../../pages/About/About";
 import { Experience } from "../../pages/Experience/Experience";
@@ -10,7 +11,8 @@ import { ErrorPage } from "../../pages/ErrorPage/ErrorPage";
 
 import CONTENT from "../../components-content.json";
 
-const { PL_NAV } = CONTENT.PL;
+const { PL_NAV, PL_LANGUAGE } = CONTENT.PL;
+const { EN_LANGUAGE } = CONTENT.EN;
 
 const scrollAnimate = () => {
   if (window.scrollY > 0) {
@@ -65,4 +67,8 @@ export const Page = ({ selectedLanguage }) => {
       <Switch>{pagesRender}</Switch>
     </section>
   );
+};
+
+Page.propTypes = {
+  selectedLanguage: PropTypes.oneOf([PL_LANGUAGE, EN_LANGUAGE]),
 };

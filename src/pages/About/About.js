@@ -1,9 +1,11 @@
 import React, { useMemo } from "react";
+import PropTypes from "prop-types";
 import "./About.scss";
 import CONTENT from "../../pages-content.json";
 
 const myAge = new Date().getFullYear() - 1993;
 const { PL_LANGUAGE } = CONTENT.PL;
+const { EN_LANGUAGE } = CONTENT.EN;
 const { PL_HELLO, PL_DESCRIPTION1, PL_DESCRIPTION2 } = CONTENT.PL.ABOUT;
 const { EN_HELLO, EN_DESCRIPTION1, EN_DESCRIPTION2 } = CONTENT.EN.ABOUT;
 
@@ -28,4 +30,8 @@ export const About = ({ selectedLanguage }) => {
       </div>
     </div>
   );
+};
+
+About.propTypes = {
+  selectedLanguage: PropTypes.oneOf([PL_LANGUAGE, EN_LANGUAGE]),
 };

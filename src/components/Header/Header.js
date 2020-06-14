@@ -1,12 +1,13 @@
 import React, { useMemo } from "react";
 import { Switch, Route } from "react-router-dom";
+import PropTypes from "prop-types";
 
 import "./Header.scss";
 import slider from "../../images/slider.jpg";
 import CONTENT from "../../components-content.json";
 
 const { PL_NAV, PL_LANGUAGE } = CONTENT.PL;
-const { EN_NAV } = CONTENT.EN;
+const { EN_NAV, EN_LANGUAGE } = CONTENT.EN;
 
 export const Header = ({ selectedLanguage }) => {
   const isPolishLanguageChoosen = useMemo(
@@ -33,4 +34,8 @@ export const Header = ({ selectedLanguage }) => {
       <Switch>{navigationToRender}</Switch>
     </header>
   );
+};
+
+Header.propTypes = {
+  selectedLanguage: PropTypes.oneOf([PL_LANGUAGE, EN_LANGUAGE]),
 };

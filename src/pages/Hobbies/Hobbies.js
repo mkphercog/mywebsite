@@ -1,4 +1,5 @@
 import React, { useMemo } from "react";
+import PropTypes from "prop-types";
 import "./Hobbies.scss";
 
 import coding from "../../images/coding.jpg";
@@ -10,6 +11,7 @@ import music from "../../images/music.jpg";
 import CONTENT from "../../pages-content.json";
 
 const { PL_LANGUAGE } = CONTENT.PL;
+const { EN_LANGUAGE } = CONTENT.EN;
 const { PL_DESCRIPTION } = CONTENT.PL.HOBBIES;
 const { EN_DESCRIPTION } = CONTENT.EN.HOBBIES;
 
@@ -58,4 +60,8 @@ export const Hobbies = ({ selectedLanguage }) => {
   );
 
   return <div className="hobbies">{hobbiesToRender}</div>;
+};
+
+Hobbies.propTypes = {
+  selectedLanguage: PropTypes.oneOf([PL_LANGUAGE, EN_LANGUAGE]),
 };

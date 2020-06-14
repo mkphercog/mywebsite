@@ -1,8 +1,10 @@
 import React, { useMemo } from "react";
+import PropTypes from "prop-types";
 import "./Skills.scss";
 import CONTENT from "../../pages-content.json";
 
 const { PL_LANGUAGE } = CONTENT.PL;
+const { EN_LANGUAGE } = CONTENT.EN;
 const {
   PL_PROGRAMMING_TITLE,
   PROGRAMMING,
@@ -53,4 +55,8 @@ export const Skills = ({ selectedLanguage }) => {
       {otherSkillsRender}
     </div>
   );
+};
+
+Skills.propTypes = {
+  selectedLanguage: PropTypes.oneOf([PL_LANGUAGE, EN_LANGUAGE]),
 };

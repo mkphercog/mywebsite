@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types";
+
 import "./MenuIcon.scss";
 
 export const MenuIcon = ({ isMenuVisible, setMenuVisible }) => (
@@ -11,3 +13,8 @@ export const MenuIcon = ({ isMenuVisible, setMenuVisible }) => (
     <i className="fas fa-caret-down"></i>
   </div>
 );
+
+MenuIcon.propTypes = {
+  isMenuVisible: PropTypes.bool,
+  setMenuVisible: PropTypes.func,
+};

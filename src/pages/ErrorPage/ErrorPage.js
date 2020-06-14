@@ -1,11 +1,13 @@
 import React, { useMemo } from "react";
 import { useHistory } from "react-router-dom";
+import PropTypes from "prop-types";
 
 import "./ErrorPage.scss";
 import ErrorImg from "../../images/ErrorImg.jpg";
 import CONTENT from "../../pages-content.json";
 
 const { PL_LANGUAGE } = CONTENT.PL;
+const { EN_LANGUAGE } = CONTENT.EN;
 const { PL_ARE_YOU_LOST, PL_BACK_TO_MAIN_PAGE } = CONTENT.PL.ERROR_PAGE;
 const { EN_ARE_YOU_LOST, EN_BACK_TO_MAIN_PAGE } = CONTENT.EN.ERROR_PAGE;
 
@@ -36,4 +38,8 @@ export const ErrorPage = ({ selectedLanguage }) => {
       </div>
     </div>
   );
+};
+
+ErrorPage.propTypes = {
+  selectedLanguage: PropTypes.oneOf([PL_LANGUAGE, EN_LANGUAGE]),
 };

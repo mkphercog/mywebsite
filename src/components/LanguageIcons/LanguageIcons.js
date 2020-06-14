@@ -1,4 +1,6 @@
 import React, { useMemo } from "react";
+import PropTypes from "prop-types";
+
 import "./LanguageIcons.scss";
 import CONTENT from "../../components-content.json";
 
@@ -52,4 +54,9 @@ export const LanguageIcons = ({ selectedLanguage, changeLanguage }) => {
       </span>
     </div>
   );
+};
+
+LanguageIcons.propTypes = {
+  selectedLanguage: PropTypes.oneOf([PL_LANGUAGE, EN_LANGUAGE]),
+  changeLanguage: PropTypes.func,
 };

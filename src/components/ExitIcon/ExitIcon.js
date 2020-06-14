@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./ExitIcon.scss";
 
 export const ExitIcon = ({ hideMenu }) => (
@@ -6,3 +7,7 @@ export const ExitIcon = ({ hideMenu }) => (
     <i className="fas fa-times"></i>
   </div>
 );
+
+ExitIcon.propTypes = {
+  hideMenu: PropTypes.func,
+};

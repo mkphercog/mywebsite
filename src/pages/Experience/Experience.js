@@ -1,8 +1,10 @@
 import React, { useMemo } from "react";
+import PropTypes from "prop-types";
 import "./Experience.scss";
 import CONTENT from "../../pages-content.json";
 
 const { PL_LANGUAGE } = CONTENT.PL;
+const { EN_LANGUAGE } = CONTENT.EN;
 const {
   PL_WORK_TITLE,
   PL_EXPERIENCE_LIST,
@@ -78,4 +80,8 @@ export const Experience = ({ selectedLanguage }) => {
       </section>
     </>
   );
+};
+
+Experience.propTypes = {
+  selectedLanguage: PropTypes.oneOf([PL_LANGUAGE, EN_LANGUAGE]),
 };
