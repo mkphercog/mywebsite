@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { useHistory } from "react-router-dom";
 
 import "./ErrorPage.scss";
@@ -10,13 +10,18 @@ const { PL_ARE_YOU_LOST, PL_BACK_TO_MAIN_PAGE } = CONTENT.PL.ERROR_PAGE;
 const { EN_ARE_YOU_LOST, EN_BACK_TO_MAIN_PAGE } = CONTENT.EN.ERROR_PAGE;
 
 export const ErrorPage = ({ selectedLanguage }) => {
+  const isPolishLanguageChoosen = useMemo(
+    () => selectedLanguage === PL_LANGUAGE,
+    [selectedLanguage]
+  );
   const history = useHistory();
+
   return (
     <div className="errorPage">
       <img className="errorPage__img" src={ErrorImg} alt="Error!" />
       <div className="errorPage__wrapper">
         <p className="errorPage__text">
-          {selectedLanguage === PL_LANGUAGE ? PL_ARE_YOU_LOST : EN_ARE_YOU_LOST}
+          {isPolishLanguageChoosen ? PL_ARE_YOU_LOST : EN_ARE_YOU_LOST}
         </p>
         <button
           className="errorPage__backBtn"
@@ -24,7 +29,7 @@ export const ErrorPage = ({ selectedLanguage }) => {
             history.push("/");
           }}
         >
-          {selectedLanguage === PL_LANGUAGE
+          {isPolishLanguageChoosen
             ? PL_BACK_TO_MAIN_PAGE
             : EN_BACK_TO_MAIN_PAGE}
         </button>

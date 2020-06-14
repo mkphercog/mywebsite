@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { Switch, Route } from "react-router-dom";
 
 import "./Header.scss";
@@ -9,21 +9,28 @@ const { PL_NAV, PL_LANGUAGE } = CONTENT.PL;
 const { EN_NAV } = CONTENT.EN;
 
 export const Header = ({ selectedLanguage }) => {
-  let NAV_TO_SHOW = selectedLanguage === PL_LANGUAGE ? PL_NAV : EN_NAV;
+  const isPolishLanguageChoosen = useMemo(
+    () => selectedLanguage === PL_LANGUAGE,
+    [selectedLanguage]
+  );
 
-  NAV_TO_SHOW = NAV_TO_SHOW.map((item) => (
-    <Route
-      key={item.name}
-      exact={item.exact}
-      path={item.path}
-      component={() => <h1 className="sliders__title">{item.name}</h1>}
-    />
-  ));
+  const navigationToRender = useMemo(
+    () =>
+      (isPolishLanguageChoosen ? PL_NAV : EN_NAV).map((item) => (
+        <Route
+          key={item.name}
+          exact={item.exact}
+          path={item.path}
+          component={() => <h1 className="sliders__title">{item.name}</h1>}
+        />
+      )),
+    [isPolishLanguageChoosen]
+  );
 
   return (
     <header className="sliders">
       <img className="sliders__image" src={slider} alt="Slider" />
-      <Switch>{NAV_TO_SHOW}</Switch>
+      <Switch>{navigationToRender}</Switch>
     </header>
   );
 };

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import "./LanguageIcons.scss";
 import CONTENT from "../../components-content.json";
 
@@ -6,15 +6,28 @@ const { PL_LANGUAGE } = CONTENT.PL;
 const { EN_LANGUAGE } = CONTENT.EN;
 
 export const LanguageIcons = ({ selectedLanguage, changeLanguage }) => {
-  const langBool = selectedLanguage === PL_LANGUAGE ? true : false;
+  const isPolishLanguageChoosen = useMemo(
+    () => selectedLanguage === PL_LANGUAGE,
+    [selectedLanguage]
+  );
 
-  const stylePL = {
-    backgroundColor: `${langBool ? "goldenrod" : "transparent"}`
-  };
+  const stylePL = useMemo(
+    () => ({
+      backgroundColor: `${
+        isPolishLanguageChoosen ? "goldenrod" : "transparent"
+      }`,
+    }),
+    [isPolishLanguageChoosen]
+  );
 
-  const styleEN = {
-    backgroundColor: `${!langBool ? "goldenrod" : "transparent"}`
-  };
+  const styleEN = useMemo(
+    () => ({
+      backgroundColor: `${
+        !isPolishLanguageChoosen ? "goldenrod" : "transparent"
+      }`,
+    }),
+    [isPolishLanguageChoosen]
+  );
 
   return (
     <div className="language">

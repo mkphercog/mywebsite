@@ -7,6 +7,32 @@
   z-index: 99;
 }
 
+.menu-icon--hide {
+  animation: iconHide 0.4s linear both;
+
+  @keyframes iconHide {
+    from {
+      right: 0;
+    }
+    to {
+      right: -100px;
+    }
+  }
+}
+
+.menu-icon--show {
+  animation: iconShow 0.4s linear both;
+
+  @keyframes iconShow {
+    from {
+      right: -100px;
+    }
+    to {
+      right: 0;
+    }
+  }
+}
+
 .fa-caret-down {
   font-size: 65px;
   transform: rotate(90deg);

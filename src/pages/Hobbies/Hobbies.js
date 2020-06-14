@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useMemo } from "react";
 import "./Hobbies.scss";
+
 import coding from "../../images/coding.jpg";
 import cooking from "../../images/cooking.jpg";
 import books from "../../images/books.jpg";
 import rolls from "../../images/rolls.jpg";
 import music from "../../images/music.jpg";
+
 import CONTENT from "../../pages-content.json";
 
 const { PL_LANGUAGE } = CONTENT.PL;
@@ -14,37 +16,46 @@ const { EN_DESCRIPTION } = CONTENT.EN.HOBBIES;
 const hobbiesIMG = [
   {
     url: coding,
-    alt: "Coding"
+    alt: "Coding",
   },
   {
     url: cooking,
-    alt: "Cooking"
+    alt: "Cooking",
   },
   {
     url: books,
-    alt: "Books"
+    alt: "Books",
   },
   {
     url: rolls,
-    alt: "Rolls"
+    alt: "Rolls",
   },
   {
     url: music,
-    alt: "Music"
-  }
+    alt: "Music",
+  },
 ];
 
 export const Hobbies = ({ selectedLanguage }) => {
-  const HOBBIES_TO_SHOW = hobbiesIMG.map((item, index) => (
-    <div className="hobbies__wrapper" key={index}>
-      <p className="hobbies__description">
-        {selectedLanguage === PL_LANGUAGE
-          ? PL_DESCRIPTION[index].description
-          : EN_DESCRIPTION[index].description}
-      </p>
-      <img className="hobbies__img" src={item.url} alt={item.alt} />
-    </div>
-  ));
+  const isPolishLanguageChoosen = useMemo(
+    () => selectedLanguage === PL_LANGUAGE,
+    [selectedLanguage]
+  );
 
-  return <div className="hobbies">{HOBBIES_TO_SHOW}</div>;
+  const hobbiesToRender = useMemo(
+    () =>
+      hobbiesIMG.map((item, index) => (
+        <div className="hobbies__wrapper" key={index}>
+          <p className="hobbies__description">
+            {isPolishLanguageChoosen
+              ? PL_DESCRIPTION[index].description
+              : EN_DESCRIPTION[index].description}
+          </p>
+          <img className="hobbies__img" src={item.url} alt={item.alt} />
+        </div>
+      )),
+    [isPolishLanguageChoosen]
+  );
+
+  return <div className="hobbies">{hobbiesToRender}</div>;
 };
