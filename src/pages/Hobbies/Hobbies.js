@@ -13,7 +13,7 @@ const { PL_LANGUAGE } = CONTENT.PL;
 const { PL_DESCRIPTION } = CONTENT.PL.HOBBIES;
 const { EN_DESCRIPTION } = CONTENT.EN.HOBBIES;
 
-const hobbiesIMG = [
+const hobbiesImages = [
   {
     url: coding,
     alt: "Coding",
@@ -44,7 +44,7 @@ export const Hobbies = ({ selectedLanguage }) => {
 
   const hobbiesToRender = useMemo(
     () =>
-      hobbiesIMG.map((item, index) => (
+      hobbiesImages.map((item, index) => (
         <div className="hobbies__wrapper" key={index}>
           <p className="hobbies__description">
             {isPolishLanguageChoosen

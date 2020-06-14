@@ -44,7 +44,7 @@ export const Page = ({ selectedLanguage }) => {
     [selectedLanguage]
   );
 
-  const PAGES_TO_SHOW = useMemo(
+  const pagesRender = useMemo(
     () =>
       pages.map((page, index) => (
         <Route
@@ -62,7 +62,7 @@ export const Page = ({ selectedLanguage }) => {
 
   return (
     <section>
-      <Switch>{PAGES_TO_SHOW}</Switch>
+      <Switch>{pagesRender}</Switch>
     </section>
   );
 };
