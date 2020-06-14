@@ -38,14 +38,14 @@ export const Navigation = ({ selectedLanguage, changeLanguage }) => {
 
   return (
     <>
-      <ul className={`nav ${menuVisibilityClass}`}>
+      <nav className={`nav ${menuVisibilityClass}`}>
         <ExitIcon hideMenu={() => setMenuVisibilityClass(navHideClass)} />
         <LanguageIcons
           changeLanguage={changeLanguage}
           selectedLanguage={selectedLanguage}
         />
         {navRender}
-      </ul>
+      </nav>
       <MenuIcon
         isMenuVisible={menuVisibilityClass === navShowClass ? true : false}
         setMenuVisible={() => setMenuVisibilityClass(navShowClass)}

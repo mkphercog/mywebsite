@@ -21,21 +21,13 @@ export const App = () => {
   return (
     <HashRouter basename="/">
       <div className="app">
-        <nav className="app__nav">
-          <Navigation
-            changeLanguage={handleBtnChangeLang}
-            selectedLanguage={language}
-          />
-        </nav>
-        <header className="app__header">
-          <Header selectedLanguage={language} />
-        </header>
-        <section className="app__page">
-          <Page selectedLanguage={language} />
-        </section>
-        <footer className="app__footer">
-          <Footer selectedLanguage={language} />
-        </footer>
+        <Navigation
+          changeLanguage={handleBtnChangeLang}
+          selectedLanguage={language}
+        />
+        <Header selectedLanguage={language} />
+        <Page selectedLanguage={language} />
+        <Footer selectedLanguage={language} />
       </div>
     </HashRouter>
   );

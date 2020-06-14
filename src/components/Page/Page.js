@@ -21,23 +21,23 @@ const scrollAnimate = () => {
 export const Page = ({ selectedLanguage }) => {
   const pages = [
     {
-      component: <About selectedLanguage={selectedLanguage} />
+      component: <About selectedLanguage={selectedLanguage} />,
     },
     {
-      component: <Experience selectedLanguage={selectedLanguage} />
+      component: <Experience selectedLanguage={selectedLanguage} />,
     },
     {
-      component: <Skills selectedLanguage={selectedLanguage} />
+      component: <Skills selectedLanguage={selectedLanguage} />,
     },
     {
-      component: <Hobbies selectedLanguage={selectedLanguage} />
+      component: <Hobbies selectedLanguage={selectedLanguage} />,
     },
     {
-      component: <Portfolio selectedLanguage={selectedLanguage} />
+      component: <Portfolio selectedLanguage={selectedLanguage} />,
     },
     {
-      component: <ErrorPage selectedLanguage={selectedLanguage} />
-    }
+      component: <ErrorPage selectedLanguage={selectedLanguage} />,
+    },
   ];
 
   const PAGES_TO_SHOW = pages.map((page, index) => (
@@ -53,8 +53,8 @@ export const Page = ({ selectedLanguage }) => {
   ));
 
   return (
-    <>
+    <section>
       <Switch>{PAGES_TO_SHOW}</Switch>
-    </>
+    </section>
   );
 };

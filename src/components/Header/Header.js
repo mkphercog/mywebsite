@@ -21,9 +21,9 @@ export const Header = ({ selectedLanguage }) => {
   ));
 
   return (
-    <div className="sliders">
+    <header className="sliders">
       <img className="sliders__image" src={slider} alt="Slider" />
       <Switch>{NAV_TO_SHOW}</Switch>
-    </div>
+    </header>
   );
 };

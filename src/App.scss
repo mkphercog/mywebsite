@@ -4,29 +4,6 @@
   min-width: 320px;
   max-width: $max-web-width;
   margin: 0 auto;
-  font-family: "Roboto Condensed", sans-serif;
-}
-
-.app__header {
-  position: relative;
-  min-height: 50vh;
-  height: 65vh;
-  overflow: hidden;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  box-shadow: 0 0 3px 0 black;
-}
-
-.app__nav {
-  width: 100%;
-}
-
-.app__page {
-  min-height: 30vh;
-}
-
-.app__footer {
-  height: 10vh;
 }
 
 ::-webkit-scrollbar {

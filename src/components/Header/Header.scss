@@ -1,3 +1,13 @@
+.sliders {
+  position: relative;
+  min-height: 50vh;
+  height: 65vh;
+  overflow: hidden;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-shadow: 0 0 3px 0 black;
+}
+
 .sliders__image {
   position: absolute;
   top: 50%;
