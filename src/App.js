@@ -14,7 +14,7 @@ const { PL_LANGUAGE } = CONTENT.PL;
 export const App = () => {
   const [language, setLanguage] = useState(PL_LANGUAGE);
 
-  const handleBtnChangeLang = lang => {
+  const handleBtnChangeLang = (lang) => {
     setLanguage(lang);
   };
 
@@ -22,21 +22,19 @@ export const App = () => {
     <HashRouter basename="/">
       <div className="app">
         <nav className="app__nav">
-          {
-            <Navigation
-              changeLanguage={handleBtnChangeLang}
-              selectedLanguage={language}
-            />
-          }
+          <Navigation
+            changeLanguage={handleBtnChangeLang}
+            selectedLanguage={language}
+          />
         </nav>
         <header className="app__header">
-          {<Header selectedLanguage={language} />}
+          <Header selectedLanguage={language} />
         </header>
         <section className="app__page">
-          {<Page selectedLanguage={language} />}
+          <Page selectedLanguage={language} />
         </section>
         <footer className="app__footer">
-          {<Footer selectedLanguage={language} />}
+          <Footer selectedLanguage={language} />
         </footer>
       </div>
     </HashRouter>

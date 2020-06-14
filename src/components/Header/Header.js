@@ -11,7 +11,7 @@ const { EN_NAV } = CONTENT.EN;
 export const Header = ({ selectedLanguage }) => {
   let NAV_TO_SHOW = selectedLanguage === PL_LANGUAGE ? PL_NAV : EN_NAV;
 
-  NAV_TO_SHOW = NAV_TO_SHOW.map(item => (
+  NAV_TO_SHOW = NAV_TO_SHOW.map((item) => (
     <Route
       key={item.name}
       exact={item.exact}

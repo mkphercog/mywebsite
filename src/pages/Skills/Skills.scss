@@ -4,59 +4,59 @@
 .skills {
   @include animation();
   margin: 20px 0;
+}
 
-  .skills__title {
-    @include title();
+.skills__title {
+  @include title();
+}
+
+.skills__name {
+  padding: 6px 10px;
+  font-size: 18px;
+  text-align: justify;
+  line-height: 150%;
+  text-transform: uppercase;
+
+  @media (min-width: 411) {
+    font-size: 24px;
   }
 
-  .skills__name {
-    padding: 6px 10px;
-    font-size: 18px;
-    text-align: justify;
-    line-height: 150%;
-    text-transform: uppercase;
-
-    @media (min-width: 411) {
-      font-size: 24px;
-    }
-
-    @media (min-width: 768px) {
-      margin-left: 10%;
-      font-size: 26px;
-    }
-
-    @media (min-width: 1024px) {
-      font-size: 30px;
-    }
+  @media (min-width: 768px) {
+    margin-left: 10%;
+    font-size: 26px;
   }
 
-  .skills__name--alone {
-    margin: 10px;
-    border-top: 2px solid $main-color;
-    background-color: #eee;
-    text-align: center;
-
-    @media (min-width: 768px) {
-      margin: 15px 40px;
-    }
+  @media (min-width: 1024px) {
+    font-size: 30px;
   }
+}
 
-  .skills__bar {
-    width: 90%;
-    height: 15px;
-    margin: 0 auto;
-    background-color: #333;
+.skills__name--alone {
+  margin: 10px;
+  border-top: 2px solid $main-color;
+  background-color: #eee;
+  text-align: center;
 
-    .skills__progress {
-      height: 100%;
-      background-color: goldenrod;
-      border-top-right-radius: 5px;
-      border-bottom-right-radius: 5px;
-    }
-
-    @media (min-width: 768px) {
-      width: 80%;
-      height: 25px;
-    }
+  @media (min-width: 768px) {
+    margin: 15px 40px;
   }
+}
+
+.skills__bar {
+  width: 90%;
+  height: 15px;
+  margin: 0 auto;
+  background-color: #333;
+
+  @media (min-width: 768px) {
+    width: 80%;
+    height: 25px;
+  }
+}
+
+.skills__progress {
+  height: 100%;
+  background-color: goldenrod;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }

@@ -10,8 +10,8 @@ import CONTENT from "../../components-content.json";
 
 const { PL_NAV, PL_LANGUAGE } = CONTENT.PL;
 const { EN_NAV } = CONTENT.EN;
-const navShow = "nav--show";
-const navHide = "nav--hide";
+const navShowClass = "nav--show";
+const navHideClass = "nav--hide";
 
 export const Navigation = ({ selectedLanguage, changeLanguage }) => {
   const [menuVisibilityClass, setMenuVisibilityClass] = useState("");
@@ -24,7 +24,7 @@ export const Navigation = ({ selectedLanguage, changeLanguage }) => {
             className="nav__link"
             to={item.path}
             exact={item.exact}
-            onClick={() => setMenuVisibilityClass(navHide)}
+            onClick={() => setMenuVisibilityClass(navHideClass)}
           >
             {item.name}
           </NavLink>
@@ -39,7 +39,7 @@ export const Navigation = ({ selectedLanguage, changeLanguage }) => {
   return (
     <>
       <ul className={`nav ${menuVisibilityClass}`}>
-        <ExitIcon hideMenu={() => setMenuVisibilityClass(navHide)} />
+        <ExitIcon hideMenu={() => setMenuVisibilityClass(navHideClass)} />
         <LanguageIcons
           changeLanguage={changeLanguage}
           selectedLanguage={selectedLanguage}
@@ -47,8 +47,8 @@ export const Navigation = ({ selectedLanguage, changeLanguage }) => {
         {navRender}
       </ul>
       <MenuIcon
-        isMenuVisible={menuVisibilityClass === navShow ? true : false}
-        setMenuVisible={() => setMenuVisibilityClass(navShow)}
+        isMenuVisible={menuVisibilityClass === navShowClass ? true : false}
+        setMenuVisible={() => setMenuVisibilityClass(navShowClass)}
       />
     </>
   );
