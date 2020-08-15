@@ -117,6 +117,12 @@
     "PORTFOLIO": {
       "PL_PROJECTS_LIST": [
         {
+          "name": "Pokemon App",
+          "description": "Aplikacja wykorzystuje stronę PokeAPI do pobierania danych na temat pokemonów. Pisząc tą aplikację uczyłem się paginacji i pobierania danych w przyjazny dla użytkownika sposób. Jest to pierwsza aplikacja stylowana za pomocą styled-components.",
+          "urlWeb": "https://mkphercog.github.io/pokemonapp/",
+          "urlCode": "https://github.com/mkphercog/pokemonapp"
+        },
+        {
           "name": "Space",
           "description": "Reactowa aplikacja napisana z użyciem TypeScript, Routing (React Router), globalny stan (Redux). Space to wizualizacja działania prawdziwej strony social media. Wszelkie zmiany podczas sesji nie zostaną zapisane ze względu na brak podłączenia do backendu.",
           "urlWeb": "https://mkphercog.github.io/space/",
@@ -242,6 +248,12 @@
 
     "PORTFOLIO": {
       "EN_PROJECTS_LIST": [
+        {
+          "name": "Pokemon App",
+          "description": "This application uses website PokeAPI to fetch data about pokemons. I learned here how to build pagination and good way to fetch data. Also it's my first small aplication styled with styled-components.",
+          "urlWeb": "https://mkphercog.github.io/pokemonapp/",
+          "urlCode": "https://github.com/mkphercog/pokemonapp"
+        },
         {
           "name": "Space",
           "description": "This is react app written with TypeScript, Routing (React Router), global state (Redux). Space is just visualization of real social media website. Any changes will not be saved, because app doesn't have backend side.",
