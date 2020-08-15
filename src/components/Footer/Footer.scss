@@ -1,22 +1,45 @@
+@import "../../styles/variables.scss";
+
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   height: 10vh;
-  text-align: center;
   background-color: #222;
-  color: white;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   box-shadow: 0 0 3px 0 black;
 }
 
 .footer__name {
+  margin-left: 30px;
   font-size: 18px;
-  line-height: 10vh;
+  color: white;
 
   @media (min-width: 768px) {
     font-size: 25px;
   }
+}
 
-  @media (min-width: 1024px) {
-    font-size: 30px;
+.footer__web-code {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  text-decoration: none;
+  font-size: 10px;
+  color: white;
+  transition: 0.3s;
+
+  @media (min-width: 768px) {
+    bottom: 15px;
+    right: 20px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer__web-code:hover {
+    color: $main-color;
   }
 }

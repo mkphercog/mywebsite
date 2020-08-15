@@ -139,12 +139,6 @@
           "description": "Ten projekt to moje początki przygody z HTML, CSS i trochę JS. Uczyłem się tutaj jak zrobić responsywną stonę à la wizytówka.",
           "urlWeb": "https://mkphercog.github.io/my-first-web-JS/",
           "urlCode": "https://github.com/mkphercog/my-first-web-JS"
-        },
-        {
-          "name": "Aktualna strona",
-          "description": "Zapraszam do zapoznania się z kodem aktualnej strony.",
-          "urlWeb": "https://mkphercog.github.io/mywebsite/",
-          "urlCode": "https://github.com/mkphercog/mywebsite/tree/master"
         }
       ],
       "PL_BTN_SEE_HERE": "Zobacz projekt tutaj",
@@ -271,12 +265,6 @@
           "description": "The project is the beginning of my adventure with HTML, CSS and a bit of JS. I learned here how to make a responsive page like a business card. ",
           "urlWeb": "https://mkphercog.github.io/my-first-web-JS/",
           "urlCode": "https://github.com/mkphercog/my-first-web-JS"
-        },
-        {
-          "name": "Current website",
-          "description": "I invite You to check code of this website.",
-          "urlWeb": "https://mkphercog.github.io/mywebsite/",
-          "urlCode": "https://github.com/mkphercog/mywebsite/tree/master"
         }
       ],
       "EN_BTN_SEE_HERE": "See the project here",
