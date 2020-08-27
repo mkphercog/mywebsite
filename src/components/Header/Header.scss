@@ -32,23 +32,11 @@
   min-height: 100%;
   transform: translate(-50%, -50%);
   z-index: -99;
-
-  @media (min-width: 1024px) {
-    // height: auto;
-  }
-
-  @media (orientation: landscape) {
-    // height: auto;
-  }
 }
 
 .sliders__title {
   position: absolute;
-  // width: 100%;
-  // text-align: center;
-  // bottom: 30%;
   bottom: 23%;
-
   left: 50%;
   transform: translateX(-50%);
   font-size: 18px;
@@ -56,22 +44,17 @@
   color: white;
   text-transform: uppercase;
   padding: 5px 15px;
-  // box-shadow: 0 3px 10px 2px black;
-  // text-shadow: 0 0 5px black;
   border-radius: 15px;
-  // background-color: white;
 
   animation: shadowVisibility 0.5s 0.5s both linear,
     textVisibility 0.5s 1s both linear;
 
   @keyframes textVisibility {
     from {
-      // bottom: 0;
       color: transparent;
       text-shadow: none;
     }
     to {
-      // bottom: 23%;
       color: white;
       text-shadow: 0 0 5px black;
     }

@@ -75,7 +75,6 @@
   @media (min-width: 1024px) {
     :hover {
       transform: scale(1.2);
-      // border-bottom: 2px white solid;
     }
   }
 }
@@ -84,18 +83,15 @@
   display: block;
   padding: 20px 0;
   font-size: 14px;
-  // border-bottom: 2px solid white;
   text-transform: uppercase;
   text-decoration: none;
   color: $main-color;
 
   @media (min-width: 411px) {
-    // padding: 25px 35px 15px;
     font-size: 17px;
   }
 
   @media (min-width: 768px) {
-    // padding: 40px 40px 20px;
     font-size: 20px;
   }
 
