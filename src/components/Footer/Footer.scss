@@ -1,24 +1,33 @@
 @import "../../styles/variables.scss";
 
 .footer {
+  flex-shrink: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 10vh;
+  height: 7vh;
   background-color: #222;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   box-shadow: 0 0 3px 0 black;
+
+  @media (orientation: landscape) {
+    height: 12vh;
+  }
+
+  @media (min-width: 768px) {
+    height: 5vh;
+  }
 }
 
 .footer__name {
   margin-left: 30px;
-  font-size: 18px;
+  font-size: 12px;
   color: white;
 
   @media (min-width: 768px) {
-    font-size: 25px;
+    font-size: 16px;
   }
 }
 
@@ -34,7 +43,12 @@
   @media (min-width: 768px) {
     bottom: 15px;
     right: 20px;
-    font-size: 14px;
+    font-size: 12px;
+  }
+
+  @media (min-width: 1024px) {
+    bottom: 5px;
+    right: 10px;
   }
 }
 

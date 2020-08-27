@@ -4,6 +4,7 @@
 .skills {
   @include animation();
   margin: 20px 0;
+  width: 100%;
 }
 
 .skills__title {

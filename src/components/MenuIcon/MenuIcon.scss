@@ -34,16 +34,16 @@
 }
 
 .fa-caret-down {
-  font-size: 65px;
+  font-size: 40px;
   transform: rotate(90deg);
   color: $main-color;
 
   @media (min-width: 411px) {
-    font-size: 75px;
+    font-size: 50px;
   }
 
   @media (min-width: 768px) {
-    font-size: 90px;
+    font-size: 60px;
   }
 
   @media (min-width: 1024px) {

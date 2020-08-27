@@ -1,6 +1,7 @@
 import React, { useMemo } from "react";
 import { Switch, Route } from "react-router-dom";
 import PropTypes from "prop-types";
+import "./Page.scss";
 
 import { About } from "../../pages/About/About";
 import { Experience } from "../../pages/Experience/Experience";
@@ -63,7 +64,7 @@ export const Page = ({ selectedLanguage }) => {
   );
 
   return (
-    <section>
+    <section className="page">
       <Switch>{pagesRender}</Switch>
     </section>
   );
