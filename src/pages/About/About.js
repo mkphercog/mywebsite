@@ -2,6 +2,7 @@ import React, { useMemo } from "react";
 import PropTypes from "prop-types";
 import "./About.scss";
 import CONTENT from "../../pages-content.json";
+import myFace from "./../../images/myFace.jpg";
 
 const myAge = new Date().getFullYear() - 1993;
 const { PL_LANGUAGE } = CONTENT.PL;
@@ -17,7 +18,9 @@ export const About = ({ selectedLanguage }) => {
 
   return (
     <div className="about">
-      <div className="about__foto"></div>
+      <div className="about__foto">
+        <img className="about__img" src={myFace} alt="Marcin Hercog" />
+      </div>
       <div className="about__wrapText">
         <h1 className="about__welcome">
           {isPolishLanguageChoosen ? PL_HELLO : EN_HELLO}
