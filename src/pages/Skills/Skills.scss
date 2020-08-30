@@ -13,51 +13,67 @@
 
 .skills__name {
   padding: 6px 10px;
-  font-size: 18px;
+  font-size: 12px;
   text-align: justify;
-  line-height: 150%;
+  // line-height: 150%;
+  margin: 0 5%;
   text-transform: uppercase;
 
-  @media (min-width: 411) {
-    font-size: 24px;
+  @media (orientation: landscape) {
+    // margin: 0 100px;
+    margin: 0 15%;
+  }
+
+  @media (min-width: 411px) {
+    font-size: 14px;
   }
 
   @media (min-width: 768px) {
-    margin-left: 10%;
-    font-size: 26px;
+    // margin-left: 10%;
+    margin: 0 10%;
+    font-size: 16px;
   }
 
   @media (min-width: 1024px) {
-    font-size: 30px;
+    margin: 0 15%;
+    font-size: 18px;
   }
 }
 
 .skills__name--alone {
   margin: 10px;
-  border-top: 2px solid $main-color;
+  border-top: 1px solid $main-color;
   background-color: #eee;
   text-align: center;
 
   @media (min-width: 768px) {
     margin: 15px 40px;
   }
+
+  @media (min-width: 1024px) {
+    width: 70%;
+    margin: 15px auto;
+  }
 }
 
 .skills__bar {
   width: 90%;
-  height: 15px;
+  height: 10px;
   margin: 0 auto;
   background-color: #333;
 
-  @media (min-width: 768px) {
+  @media (orientation: landscape) {
+    width: 70%;
+  }
+
+  @media (min-width: 768px) and (orientation: portrait) {
     width: 80%;
-    height: 25px;
   }
 }
 
 .skills__progress {
   height: 100%;
   background-color: goldenrod;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
