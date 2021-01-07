@@ -117,6 +117,12 @@
     "PORTFOLIO": {
       "PL_PROJECTS_LIST": [
         {
+          "name": "Badaj ciśnienie",
+          "description": "Reactowa aplikacja napisana z użyciem Typescript, Routing (React Router), globalny stan (Redux). Aplikacja przeznaczona dla osób z problemami z ciśnieniem krwi. Można w niej zapisywać codzienne pomiary ciśnienia krwi, następnie wydrukować okresowy pomiar z wygenerowanego pliku PDF.",
+          "urlWeb": "https://mkphercog.github.io/checkthepressure/",
+          "urlCode": "https://github.com/mkphercog/checkthepressure"
+        },
+        {
           "name": "Pokemon App",
           "description": "Aplikacja wykorzystuje stronę PokeAPI do pobierania danych na temat pokemonów. Pisząc tą aplikację uczyłem się paginacji i pobierania danych w przyjazny dla użytkownika sposób. Jest to pierwsza aplikacja stylowana za pomocą styled-components.",
           "urlWeb": "https://mkphercog.github.io/pokemonapp/",
@@ -248,6 +254,12 @@
 
     "PORTFOLIO": {
       "EN_PROJECTS_LIST": [
+        {
+          "name": "Check the pressure",
+          "description": "This is react app written with TypeScript, Routing (React Router), global state (Redux). This application is for people with blood pressure problems. You can save your daily results and then print periodic test from generated PDF file.",
+          "urlWeb": "https://mkphercog.github.io/checkthepressure/",
+          "urlCode": "https://github.com/mkphercog/checkthepressure"
+        },
         {
           "name": "Pokemon App",
           "description": "This application uses website PokeAPI to fetch data about pokemons. I learned here how to build pagination and good way to fetch data. Also it's my first small aplication styled with styled-components.",
